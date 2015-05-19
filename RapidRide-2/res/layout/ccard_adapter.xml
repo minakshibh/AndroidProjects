@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+         android:id="@+id/ccardimage"
+         android:layout_width="35dp"
+         android:layout_marginTop="2dp"
+         android:layout_height="25dp"
+         />
+
+    <TextView
+        android:id="@+id/ccardname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ccardimage"
+        android:textColor="@color/black"
+        android:text="cardno"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/imageView_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ccardname"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/delete_icon" />
+
+</RelativeLayout>

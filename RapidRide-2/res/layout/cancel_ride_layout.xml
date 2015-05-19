@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:textSize="20sp"
+        android:text="Cancel Ride" />
+
+    <Button
+        android:id="@+id/button_Ridercancelleddonotcharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rider cancelled donot charge"
+        android:layout_gravity="center_horizontal"
+       	 android:background="@drawable/corner_roundblue"
+	
+		android:padding="5dp"
+       
+         />
+
+    <Button
+        android:id="@+id/button_Sendtoanotherdriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Send to another driver"
+       android:background="@drawable/corner_roundblue"
+		android:padding="5dp"
+      
+         />
+
+    <Button
+        android:id="@+id/button_Cancelride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal"
+		 android:background="@drawable/corner_roundblue"
+		android:padding="5dp"
+	    android:text=" Cancel ride " />
+
+    <Button
+        android:id="@+id/button_dcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal"
+	 android:background="@drawable/corner_roundblue"
+		android:padding="5dp"
+        android:text=" Cancel " />
+
+</LinearLayout>

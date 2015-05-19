@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+       android:id="@+id/topView"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:background="@color/blue" >
+   <TextView
+        android:id="@+id/textView_rapid"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkblue"
+        android:text="@string/rapid"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+       />
+   <TextView
+       android:id="@+id/textViewNo_Cars"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="2dp"
+       android:textColor="#FFFFFF"
+       android:text="ETA:" />
+
+   <TextView
+       android:id="@+id/textView_fare"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/textViewLocationInfoWindow"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_toRightOf="@+id/textViewLocationInfoWindow"
+       android:text="$50"
+       android:textColor="#FFFFFF" />
+
+   <TextView
+       android:id="@+id/textView_eta"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="2dp"
+       android:layout_toRightOf="@+id/textViewNo_Cars"
+       android:text="20 mins"
+       android:textColor="@color/blue"
+       />
+
+   <ImageView
+       android:id="@+id/imageView_menu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="30dp"
+       android:src="@drawable/menu_icon" />
+
+   <ImageView
+       android:id="@+id/imageView_gpsicon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/textView_eta"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="32dp"
+       />
+
+<!--    <Button -->
+<!--        android:id="@+id/button_test" -->
+<!--        style="?android:attr/buttonStyleSmall" -->
+<!--        android:layout_width="wrap_content" -->
+<!--        android:layout_height="wrap_content" -->
+<!--        android:layout_alignParentBottom="true" -->
+<!--        android:layout_toLeftOf="@+id/imageView_menu" -->
+<!--        android:text="test" /> -->
+
+   <ImageView
+       android:id="@+id/imageView_gps"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="28dp"
+       android:layout_toLeftOf="@+id/imageView_menu"
+       android:src="@drawable/gps_icon" />
+
+   </RelativeLayout>
+   
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue2"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/topView"
+    android:orientation="vertical" >
+   
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+ <ImageView
+     android:id="@+id/imageView_riderpic"
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:layout_margin="5dp"
+   	 android:src="@drawable/profilepic" />
+    
+    <LinearLayout
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+        android:id="@+id/textView_drivername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp" />
+<TextView
+        android:id="@+id/textView_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp" />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_destination"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:text="destination"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+    
+ <LinearLayout
+	android:layout_width="60dp"
+    android:layout_height="match_parent"
+  	android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+
+<!--       <TextView -->
+<!--         android:id="@+id/textView_requesttype" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:text="Pickup" -->
+<!--         android:textColor="@color/red" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:textSize="10sp" /> -->
+  <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PICKUP"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10sp" />
+    
+    <TextView
+        android:id="@+id/textView_pkdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickup"
+        android:textColor="@color/yellow"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_pickuptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/yellow"
+        android:textSize="12sp" />
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
+	
+    </RelativeLayout>
+    
+   <RelativeLayout
+               	android:id="@+id/rl_trip_map"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_above="@+id/LastView"
+                android:layout_below="@+id/RelativeLayout1"
+                android:gravity="center_horizontal" >
+
+            <fragment
+                android:id="@+id/trip_map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+               />
+        
+      </RelativeLayout>
+    
+   <RelativeLayout
+       android:id="@+id/LastView"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="#848484"
+       android:layout_marginLeft="9dp"
+       android:layout_marginRight="9dp"
+        >
+
+       <Button
+           android:id="@+id/button_trip_start"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:background="#0B610B"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:text="START RIDE"
+           android:visibility="gone"
+           android:textColor="#FFFFFF" />
+        <Button
+           android:id="@+id/button_trip_arrive"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:background="#fdd301"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:text="ARRIVE"
+       		android:textColor="#FFFFFF" />
+         <Button
+           android:id="@+id/button_trip_end"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:background="#FF0000"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:text="END"
+           android:visibility="gone"
+           android:textColor="#FFFFFF" />
+       
+       </RelativeLayout>
+<include 
+        layout="@layout/rideinfo_menulayout"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginTop="50dp"
+	    android:layout_marginRight="8dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	  
+	    />  
+</RelativeLayout>

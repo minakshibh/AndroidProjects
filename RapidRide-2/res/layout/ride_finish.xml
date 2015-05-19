@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NumberPickerHorizontal="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/textView_rapid"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkblue"
+            android:gravity="center_horizontal"
+            android:text="@string/rapid"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_driver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner_round"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/button_driverfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_lebel_driver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:text=" TAP TO FINISH " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_driverfinish" />
+
+        <TextView
+            android:id="@+id/textView_lbl_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="RIDE COMPLETE"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_lebel_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_lbl_driver"
+            android:layout_below="@+id/textView_lbl_driver"
+            android:layout_marginTop="30dp"
+            android:text="FARE"
+            
+            android:textColor="@color/black"
+             />
+
+        <TextView
+            android:id="@+id/textView_driverfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_lebel_driver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView_lebel_driver"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_round"
+        android:orientation="vertical"
+         
+         >
+
+        <TextView
+            android:id="@+id/textView_lblrider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RIDE COMPLETE"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/textView_lebel_fare_rider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textSize="20sp"
+            android:text="FARE"
+           />
+
+        <TextView
+            android:id="@+id/textView_fareoutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+            android:text="TextView" />
+</LinearLayout>
+        
+ <LinearLayout
+            android:id="@+id/LinearLayout_numberpicker"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp"
+            android:layout_height="40dp">
+        
+
+            <TextView
+                android:id="@+id/textView_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+              	android:layout_marginLeft="30dp"
+              	android:layout_gravity="center_vertical"
+              	android:gravity="center"
+              	android:background="@color/lighter_gray"
+                android:text="  TIP (%) "
+                android:textSize="18sp" />
+        <LinearLayout
+          
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+         
+           
+            android:background="@color/lighter_gray"
+            android:orientation="horizontal" >
+
+    <view class="com.rapidride.NumberPickerHorizontal"
+   		android:id="@+id/number"
+   		android:layout_marginLeft="20dp"
+    	android:layout_width="130dp"
+    	android:layout_height="40dp"
+    
+    />
+            </LinearLayout>
+            </LinearLayout>
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_ptext2" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_marginLeft="5dp" -->
+<!--                 android:layout_weight="1" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_ptext1" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_weight="1" /> -->
+		 
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_dtext" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:background="@drawable/textcenter" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="10%" -->
+<!--                 android:layout_weight="1" /> -->
+
+            
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_ntext1" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_weight="1" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_ntext2" -->
+<!--                 android:layout_width="0dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_weight="1" /> -->
+<!--         </LinearLayout> -->
+<!--         </LinearLayout> -->
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textView_lblridertip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIP"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView_ridertip_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+               android:text=" tip " />
+        </LinearLayout>
+ <LinearLayout
+           
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+        <TextView
+            android:id="@+id/textViewLocationInfoWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="TOTAL"
+             android:textSize="20sp"
+           />
+        <!-- <RelativeLayout android:id="@+id/relativelayout_rider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/corner_round" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"> -->
+        <!-- <TextView android:id="@+id/textView_lebel_fare_rider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/textView_lblridertip" android:layout_below="@+id/textView_lblrider" android:layout_marginTop="15dp" android:text="FARE" android:textStyle="bold"/> -->
+        <!-- <TextView android:id="@+id/textView_lblrider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="5dp" android:text="RIDE COMPLETE" android:textSize="20sp"/> -->
+        <!-- <Button android:id="@+id/button_riderfinish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_centerHorizontal="true" android:layout_marginTop="20dp" android:background="@color/green" android:text=" TAP TO FINISH "/> -->
+        <!-- <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button_riderfinish"/> -->
+        <!-- <TextView android:id="@+id/textView_totalfare_rider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/textView1" android:layout_alignBottom="@+id/textView1" android:layout_alignLeft="@+id/textView_ridertip_output" android:text="total"/> -->
+        <!-- <TextView android:id="@+id/textView_lblridertip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/button_riderfinish" android:layout_below="@+id/LinearLayout_numberpicker" android:layout_marginLeft="20dp" android:text="TIP" android:textStyle="bold"/> -->
+        <!-- <LinearLayout android:id="@+id/LinearLayout_numberpicker" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_below="@+id/textView_lebel_fare_rider" android:layout_marginLeft="50dp" android:layout_marginRight="60dp" android:layout_marginTop="10dp" android:background="@color/lighter_gray" android:orientation="horizontal"> -->
+        <!-- <TextView android:id="@+id/textView_empty" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:text="TIP" android:textSize="18sp"/> -->
+        <!-- <TextView android:layout_width="0dp" android:layout_weight="1" android:id="@+id/textView_ptext2" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginLeft="5dp"/> -->
+        <!-- <TextView android:layout_width="0dp" android:layout_weight="1" android:id="@+id/textView_ptext1" android:layout_height="wrap_content" android:layout_gravity="center_vertical"/> -->
+        <!-- <TextView android:layout_width="0dp" android:layout_weight="1" android:id="@+id/textView_dtext" android:layout_height="wrap_content" android:layout_gravity="center_vertical"/> -->
+        <!-- <TextView android:layout_width="0dp" android:layout_weight="1" android:id="@+id/textView_ntext1" android:layout_height="wrap_content" android:layout_gravity="center_vertical"/> -->
+        <!-- <TextView android:layout_width="0dp" android:layout_weight="1" android:id="@+id/textView_ntext2" android:layout_height="wrap_content" android:layout_gravity="center_vertical"/> -->
+        <!-- </LinearLayout> -->
+        <!-- <TextView android:id="@+id/textView_ridertip_output" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/textView_lblrider" android:layout_below="@+id/LinearLayout_numberpicker" android:text="tip"/> -->
+        <!-- <TextView android:id="@+id/textView_fareoutput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/LinearLayout_numberpicker" android:layout_alignRight="@+id/button_riderfinish" android:text="TextView"/> -->
+        <!-- <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView_lblridertip" android:layout_below="@+id/textView_lblridertip" android:layout_marginTop="21dp" android:text="Total" android:textStyle="bold"/> -->
+        <!-- </RelativeLayout> -->
+
+        <TextView
+            android:id="@+id/textView_totalfare_rider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="total" />
+
+       
+
+</LinearLayout>
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"></LinearLayout>
+
+ <LinearLayout
+     
+      		android:id="@+id/ll_promocode"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+           
+              >
+<TextView
+         android:id="@+id/textViewNo_Cars"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:textSize="10sp"
+         android:text="USE PROMO CODE" />
+     
+     
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+                   >
+
+         <TextView
+            android:id="@+id/textView_promocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp"
+            android:text="code" />
+          <TextView
+            android:id="@+id/textView_promocodename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="15sp"
+            android:text="codename" />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"></LinearLayout>
+        
+  
+  
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="60dp"
+  
+     >
+          
+         <TextView
+            android:id="@+id/textView_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="10sp"
+            android:text="USECARD" />
+         
+           <LinearLayout
+         	android:id="@+id/LinearLayout_listviewccard"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+        >
+		 <ListView
+		     android:id="@+id/listView_ccard"
+		     android:layout_width="wrap_content"
+		      android:layout_height="match_parent"
+		     android:layout_marginLeft="20dp"
+		     android:layout_marginRight="20dp"
+		     android:layout_gravity="center_horizontal"
+		    
+   >
+ 			</ListView>
+ 
+
+ 		</LinearLayout>
+         
+       <LinearLayout
+        android:id="@+id/linearlayout_ccard"
+       	android:layout_width="fill_parent"
+     	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+   		android:orientation="horizontal"
+     	android:layout_height="60dp" 
+     	
+     	>
+     
+      <LinearLayout
+       android:layout_width="wrap_content"
+    	android:orientation="horizontal"
+   		android:layout_height="60dp" >
+         <TextView
+            android:id="@+id/textView_firstcardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:text="NO CREDIT CARD" />
+
+         <ImageView
+             android:id="@+id/imageViewIconInfoWindow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+              android:layout_marginLeft="40dp"
+             android:src="@drawable/tick" />
+            
+          
+    
+            
+         </LinearLayout>
+
+      <Button
+          android:id="@+id/button_change"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginLeft="30dp"
+          android:background="@color/transparent"
+          android:text="CHANGE"
+          android:textColor="@color/blue"
+          android:textSize="12sp" />
+       
+          </LinearLayout>
+</LinearLayout>
+            <Button
+     android:id="@+id/button_addnewccard"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@color/transparent"
+     android:layout_marginLeft="20dp"
+     android:textSize="12sp"
+     android:text="ADD NEW" />
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:orientation="horizontal"
+            android:background="@color/black">
+      
+          </LinearLayout>
+
+        <Button
+            android:id="@+id/button_riderfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/green"
+            android:layout_gravity="center_horizontal"
+            android:text="       PAY        " />
+        
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- <view class="com.rapidride.NumberPickerHorizontal$CustomEditText" -->
+    <!-- android:id="@+id/hs_view" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="30dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@+id/relativelayout_rider" -->
+    <!-- android:layout_marginTop="47dp" -->
+    <!-- android:fillViewport="true" -->
+    <!-- android:measureAllChildren="false" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:layout_marginLeft="80dp" -->
+    <!-- android:layout_marginRight="80dp" -->
+    <!-- /> -->
+    <!--
+ <HorizontalScrollView
+     android:id="@+id/hs_view"
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/relativelayout_rider"
+     android:layout_marginTop="47dp"
+     android:fillViewport="true"
+     android:measureAllChildren="false"
+     android:background="@color/white"
+     android:layout_marginLeft="80dp"
+     android:layout_marginRight="80dp"
+     android:scrollbars="none" >
+
+     <LinearLayout
+         android:id="@+id/innerLayout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+         android:orientation="horizontal" >
+     </LinearLayout>
+ </HorizontalScrollView>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <AutoCompleteTextView
+        android:id="@+id/editText_enter_Destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner_round"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="ENTER DESTINATION" >
+		<requestFocus />
+    </AutoCompleteTextView>
+    
+     <LinearLayout
+         android:id="@+id/firstHorizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editText_enter_Destination"
+         android:orientation="horizontal"
+         android:weightSum="10" >
+		
+          <View
+              android:id="@+id/imageViewGame"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="20dp"
+              android:layout_weight="3"
+              android:layout_marginLeft="10dp"
+              android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="OR"
+        android:layout_marginTop="12dp"
+     	android:gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray" />
+         
+         </LinearLayout>
+
+	
+    <LinearLayout
+        android:id="@+id/linearLayoutHori3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/firstHorizontal"
+         >
+      <Button
+        android:id="@+id/button_BackToPickUpLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+   		android:background="@drawable/button_color_round"
+        android:text="BACK TO PICKUP"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+      
+        
+      />
+
+    <Button
+        android:id="@+id/Button_backToHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_two_corner_round"
+        android:text="GO HOME" />
+	</LinearLayout>
+
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutHori3"
+        android:layout_marginTop="30dp"
+        android:text="PickUpTime"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold" /> 
+        
+ <TextView
+        android:id="@+id/textViewNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="Now"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+ <ImageView
+     android:id="@+id/imageView_now"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/linearLayoutHori3"
+     android:layout_marginLeft="0dp"
+  	 android:layout_toRightOf="@+id/textViewNow" 	
+     android:padding="20dp"
+     android:layout_marginTop="15dp"
+     android:src="@drawable/dropdownarrow" />
+ 
+ <LinearLayout
+     android:id="@+id/linerLayouthor4"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:orientation="horizontal"
+     android:layout_below="@+id/textView2"
+     android:layout_marginTop="20dp"
+      >
+    
+	<Button
+        android:id="@+id/buttonRequestRide_Trip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/corner_roundblue"
+        android:text="REQUEST RIDE"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+    
+     <Button
+        android:id="@+id/buttonRequestRide_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+     	android:layout_marginLeft="5dp"
+        android:text="CANCEL"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:background="@drawable/corner_roundblue"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold" />
+     
+ </LinearLayout>
+
+ <TextView
+     android:id="@+id/textView3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignRight="@+id/textViewNow"
+     android:layout_below="@+id/linerLayouthor4"
+     android:layout_marginRight="19dp"
+     android:layout_marginTop="10dp"
+     android:text="" />
+    
+</RelativeLayout>

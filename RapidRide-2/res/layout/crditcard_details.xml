@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:background="@color/blue" >
+   <TextView
+        android:id="@+id/textView_rapid"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkblue"
+        android:text="@string/rapid"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+       />
+
+</RelativeLayout>
+  <TextView
+       android:id="@+id/textView_lebel_creditcard"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="20dp"
+       android:layout_below="@+id/textView_rapid"
+       android:text="CRDIT CARD"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+        />
+<LinearLayout
+       android:id="@+id/lay1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="vertical"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_gravity="center_horizontal"
+       android:background="@drawable/border"
+      >
+<EditText
+    android:id="@+id/editText_creditcardno"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/corner_round"
+    android:ems="10"
+    android:hint="@string/creditcardno"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:inputType="number"
+    />
+
+<EditText
+    android:id="@+id/editText_cc_expiredate"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/corner_round"
+    android:ems="10"
+    android:hint="@string/creditcard_expdate"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     />
+
+<EditText
+    android:id="@+id/editText_securitycode"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:inputType="number"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/corner_round"
+    android:ems="10"
+    android:hint="SECURITY CODE"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     />
+<EditText
+    android:id="@+id/editText_cc_zipcode"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+     android:inputType="number"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/corner_round"
+    android:ems="10"
+    android:hint="@string/zipcode"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     />
+
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    />
+
+</LinearLayout>
+ <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+        >
+
+<Button
+    android:id="@+id/button_cccancel2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="15dp"
+    android:background="@color/transparent"
+    android:text="CANCEL"
+    android:textColor="@color/white"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/button_ccsubmit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="15dp"
+    android:background="@color/transparent"
+    android:text="DONE"
+    android:textColor="@color/white"
+    android:textSize="20sp" />
+
+<!-- <ProgressBar -->
+<!--     android:id="@+id/progressBar1" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:layout_alignParentTop="true" -->
+<!--     android:layout_marginLeft="41dp" -->
+<!--     android:layout_toRightOf="@+id/button_ccsubmit" /> -->
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+   <TextView
+        android:id="@+id/textView_location_rapid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkblue"
+        android:text="@string/rapid"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+       />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center_horizontal"
+         >
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+           
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="20dp"
+       >
+
+<!--         <Button -->
+<!--             android:id="@+id/button_cross" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_alignParentTop="true" -->
+<!--             android:text="Cross" /> -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner_round"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button_strating_postion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/transparent"
+                    android:text="EDIT"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/textView_lblstartaddess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    
+                    android:layout_toLeftOf="@+id/button_strating_postion"
+                    android:layout_alignParentLeft="true"
+                    android:text="STARTING LOCATION:"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                  
+                    />
+
+                <TextView
+                    android:id="@+id/textView_startingaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_lblstartaddess"
+                    android:layout_below="@+id/textView_lblstartaddess"
+                   	android:layout_toLeftOf="@+id/button_strating_postion"
+                   android:text="Start Address" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                 >
+
+                <Button
+                    android:id="@+id/button_end_positionchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/transparent"
+                    android:text="EDIT"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/textView_lbl_destinationAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  	android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/button_end_positionchange"
+                    android:layout_marginLeft="5dp"
+                   
+                    android:text="DESTINATION LOCATION:"
+                     />
+
+                <TextView
+                    android:id="@+id/textView_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_lbl_destinationAddress"
+                    android:layout_below="@+id/textView_lbl_destinationAddress"
+                    android:layout_toLeftOf="@+id/button_end_positionchange"
+                    android:text="out des add" />
+
+            </RelativeLayout>
+ <LinearLayout
+               
+                android:layout_width="fill_parent"
+              	android:layout_height="wrap_content" 
+              	
+              	>
+            <TextView
+                android:id="@+id/textView_lblsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:text="VEHICLE"
+                android:textStyle="bold" />
+
+ 			<Spinner
+                    android:id="@+id/spinner_vehicle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignRight="@+id/textView_lbl_time"
+                    />
+ 			</LinearLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+              	android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_lbldistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="DISTANCE:"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/textView_lbl_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_lbldistance"
+                    android:layout_below="@+id/textView_lbldistance"
+                    android:text="TIME:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView_lbl_time"
+                    android:layout_toRightOf="@+id/textView_lbl_time"
+                    android:layout_marginLeft="1dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@+id/textView_lbldistance"
+                    android:layout_toRightOf="@+id/textView_lbldistance"
+                    android:layout_marginLeft="1dp"
+                    android:text="disoutput" />
+
+               
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/corner_round"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+            >
+
+ 	
+ 	<Button
+ 	    android:id="@+id/button_edit_datetime"
+ 	    android:layout_width="50dp"
+ 	    android:layout_height="50dp"
+ 	    android:layout_alignParentRight="true"
+ 	    android:layout_alignParentTop="true"
+ 	    android:background="@color/transparent"
+ 	    android:textColor="@color/blue"
+ 	    android:gravity="center_vertical"
+ 	    android:text="EDIT" />
+
+ 	<TextView
+ 	    android:id="@+id/textView_nowtimedate"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_centerVertical="true"
+ 	    android:layout_toRightOf="@+id/textViewBackground"
+ 	    android:textColor="@color/blue"
+ 	    android:textStyle="bold"
+ 	    android:text="NOW"
+ 	    />
+
+ 	<TextView
+ 	    android:id="@+id/textViewBackground"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_centerVertical="true"
+ 	    android:text="PICK TIME:"
+ 	    android:layout_marginLeft="8dp"
+ 	    android:textStyle="bold" />
+
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_round" >
+
+        <TextView
+            android:id="@+id/textViewTimeLeft_leftside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:text="NAME OF YOUR PRICE" />
+
+        <NumberPicker
+            android:id="@+id/numberpicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textViewTimeLeft_leftside"
+            android:layout_below="@+id/textViewTimeLeft_leftside"
+            android:layout_marginRight="18dp"
+            android:focusable="false"
+             />
+
+        <TextView
+            android:id="@+id/textView_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="SUGGESTED FARE" />
+
+        <TextView
+            android:id="@+id/textViewActualPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_w"
+            android:layout_below="@+id/textView_w"
+            android:text="$100"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_lbl_myprice11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_w"
+            android:layout_below="@+id/textViewActualPrice"
+            android:layout_marginTop="10dp"
+            android:text="MY PRICE"
+            android:textSize="15sp" />
+        
+        <TextView
+	    android:id="@+id/textView_myprice"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textView_lbl_myprice11"
+	    android:layout_below="@+id/textView_lbl_myprice11"
+	    android:textStyle="bold"
+	    android:text="$100" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_request_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/skyblue"
+        android:layout_gravity="center_horizontal"
+        android:text="REQUEST PICKUP" />
+    
+	<TextView
+	    android:id="@+id/textViewemty"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:text="" />
+ </LinearLayout>
+        </ScrollView>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/yellow"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewTimeLeft_leftside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Time Left: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewTimeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_alignTop="@+id/textViewTimeLeft_leftside"
+        android:layout_toRightOf="@+id/textViewTimeLeft_leftside"
+        android:textColor="#000000"
+        android:text="15"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageViewDriverImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewBackground"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+         />
+
+    <TextView
+        android:id="@+id/textViewWhoSendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewDriverImage"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewPickUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewDriverImage"
+        android:layout_below="@+id/imageViewDriverImage"
+        android:layout_marginTop="15dp"
+        android:text="Pick Up:"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPickUp"
+        android:layout_below="@+id/textViewPickUp"
+        android:layout_marginTop="20dp"
+        android:text="Destination:"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDistance"
+        android:layout_below="@+id/txtDistance"
+        android:layout_marginTop="14dp"
+        android:text="Rating :"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRating"
+        android:layout_below="@+id/textViewRating"
+        android:text="Vehicle :"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOffered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewVehicle"
+        android:layout_below="@+id/textViewVehicle"
+        android:text="Offered Fare :"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    
+     <TextView
+        android:id="@+id/textViewPickUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewVehicle"
+        android:layout_below="@+id/textViewOffered"
+        android:textColor="#000000"
+        android:text="PickUp Time :"
+         />
+     
+      <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewVehicle"
+        android:layout_below="@+id/textViewPickUp2"
+        android:text="Distance :"
+        android:textColor="#000000"
+         />
+    
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDistance"
+         >
+         <Button 
+             android:id="@+id/buttonAccept"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:text="Accept"
+             android:layout_weight="5"
+             android:layout_marginLeft="5dp"
+             android:textColor="#000000"
+             />
+         <Button 
+             android:id="@+id/buttonReject"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:text="Reject"
+             android:layout_marginRight="5dp"
+             android:layout_weight="5"
+             android:textColor="#000000"
+             />
+	</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewHandicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewBackground"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/handicap" />
+
+    <TextView
+        android:id="@+id/textView_Rapid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/l5"
+        android:text="Rapid"
+        android:layout_centerInParent="true"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+      	android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewShowDriverMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_Rapid"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonOkDriverSide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewShowDriverMessage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:text="OK" />
+
+</RelativeLayout>

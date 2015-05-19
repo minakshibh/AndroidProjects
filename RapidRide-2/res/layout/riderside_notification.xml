@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewRiderSide"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+         />
+
+    <TextView
+        android:id="@+id/textViewBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/imageViewRiderSide"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTimeLeft_leftside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewBackground"
+        android:layout_below="@+id/textViewBackground"
+        android:textColor="#000000"
+        android:text="TextView" />
+    
+   <include
+       android:id="@+id/showMessage"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/imageViewRiderSide"
+       android:layout_alignParentRight="true"
+       android:layout_gravity="start"
+       android:layout_marginTop="@dimen/flyout_margin_top"
+       layout="@layout/dialog_showridermessage"
+       android:background="#FFFFFF" 
+       android:visibility="gone"
+ 		></include>
+</RelativeLayout>

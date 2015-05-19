@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/left_drawer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/flyout_margin_top"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF" >
+	
+    <ScrollView 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    >
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+	<ImageView
+        android:id="@+id/imageView_profilepic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_border"
+        android:src="@drawable/profilepic" />
+	
+	
+	
+	 <TextView
+           android:id="@+id/tv_ridername"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:text="name"
+           android:textSize="12sp"
+           android:layout_marginTop="5dp"/>
+
+	 
+       <Button
+           android:id="@+id/button_editregister"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="MY PROFILE"
+           android:background="@color/transparent"
+           android:gravity="left"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="10dp"
+           style="?android:attr/buttonStyleSmall"
+           android:textSize="15sp"
+         />
+
+ 	<Button
+           android:id="@+id/button_payment"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="PAYMENT"
+           style="?android:attr/buttonStyleSmall"
+           android:background="@color/transparent"
+           android:gravity="left"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="-10dp"
+           android:textSize="15sp"
+         />
+
+ 	<Button
+ 	    android:id="@+id/button_riderqueue"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:background="@color/transparent"
+ 	    android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-10dp"
+        android:textSize="15sp"
+ 	    android:text="MY QUEUE"
+ 	    style="?android:attr/buttonStyleSmall" />
+ 	 <Button
+           android:id="@+id/button_viewrides"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/transparent"
+           android:gravity="left"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="-10dp"
+           android:textSize="15sp"
+           android:text="VIEW RIDES"
+           style="?android:attr/buttonStyleSmall" />
+     <Button
+           android:id="@+id/button_help"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/transparent"
+           android:gravity="left"
+           android:layout_marginLeft="10dp" 
+           android:layout_marginTop="-10dp"
+           android:textSize="15sp"
+           android:text="HELP" 
+           style="?android:attr/buttonStyleSmall"/>
+        <Button
+           android:id="@+id/button_logout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/transparent"
+           android:gravity="left"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="-10dp"
+           android:textSize="15sp"
+           android:text="LOGOUT"
+           style="?android:attr/buttonStyleSmall" />
+        
+        
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-10dp"
+             >
+
+            <Button
+                android:id="@+id/button_driver"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/transparent"
+                android:gravity="left"
+           		android:layout_marginLeft="10dp"
+           		android:textSize="15sp"
+           		android:layout_marginTop="3dp"
+           		android:text="DRIVER"
+                />
+            
+    <com.rapidride.MySwitch
+                    style="@style/mySwitchStyle"
+                    android:id="@+id/toggleButton_driver_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    mySwitch:pushStyle="true"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumbExtraMovement="-1dp"
+                    mySwitch:trackTextPadding="1dp"
+                    mySwitch:thumb="@drawable/white_toggle"
+                    mySwitch:track="@drawable/whitess"
+                    
+                    mySwitch:leftBackground="@color/green"
+                    mySwitch:rightBackground="@color/green"
+                    mySwitch:backgroundMask="@drawable/greenss"
+           />
+
+<!--             <ToggleButton -->
+<!--                 android:id="@+id/toggleButton_driver_on_off" -->
+<!--                 android:layout_width="60dp" -->
+<!--                 android:layout_height="30dp" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:layout_marginRight="5dp" -->
+<!--                 android:layout_marginTop="2dp" -->
+<!--                 android:background="@drawable/toggle_off" -->
+<!--                 android:gravity="left" -->
+<!--                android:text="" -->
+<!-- 			    android:textOff="" -->
+<!-- 			    android:textOn="" /> -->
+
+        </RelativeLayout>
+  <RelativeLayout
+            android:id="@+id/rel_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+             android:layout_marginTop="-10dp"
+             >
+
+            <Button
+                android:id="@+id/button_show"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/transparent"
+                android:gravity="left"
+           		android:layout_marginLeft="10dp"
+           		android:textSize="15sp"
+                android:text="HOME  " 
+              />
+            
+         <com.rapidride.MySwitch
+                    style="@style/mySwitchStyle"
+                    android:id="@+id/toggleButton_showalert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    mySwitch:pushStyle="true"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumbExtraMovement="-1dp"
+                    mySwitch:trackTextPadding="1dp"
+                    mySwitch:thumb="@drawable/white_toggle"
+                    mySwitch:track="@drawable/whitess"
+                    
+                    mySwitch:leftBackground="@drawable/whitess"
+                    mySwitch:rightBackground="@drawable/greenss"
+                    mySwitch:backgroundMask="@drawable/whitess"
+           />
+
+<!--             <ToggleButton -->
+<!--                android:id="@+id/toggleButton_driver_on_off" -->
+<!--                android:layout_width="60dp" -->
+<!--                android:layout_height="30dp" -->
+<!--                android:layout_alignParentRight="true" -->
+<!--                android:layout_marginRight="5dp" -->
+<!--                android:layout_marginTop="2dp" -->
+<!--                android:background="@drawable/toggle_off" -->
+<!--                android:gravity="left" -->
+<!--                android:text="" -->
+<!-- 			    android:textOff="" -->
+<!-- 			    android:textOn="" /> -->
+
+ </RelativeLayout>
+ <TextView
+           
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="15dp"/>
+
+       
+ </LinearLayout>
+ </ScrollView>
+    
+
+</LinearLayout>

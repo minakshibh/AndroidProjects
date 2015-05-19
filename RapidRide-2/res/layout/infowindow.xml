@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewLocationInfoWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewNo_Cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLocationInfoWindow"
+        android:layout_alignBottom="@+id/textViewLocationInfoWindow"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewLocationInfoWindow"
+        android:text="No Cars"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/textViewMessageInfoWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewLocationInfoWindow"
+        android:layout_marginTop="5dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageViewIconInfoWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewNo_Cars"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/black_flag_black" />
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/textView_rapid"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkblue"
+            android:gravity="center_horizontal"
+            android:text="@string/rapid"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/corner_round" >
+			<TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="RATING"
+                    android:textSize="25sp" />
+			
+			 <LinearLayout
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+			
+                <TextView
+                    android:id="@+id/textViewNo_Cars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bluelight"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="115dp"
+                    android:text="  GOOD "
+                    android:textColor="@color/white" />
+
+                  <TextView
+                    android:id="@+id/textViewLocationInfoWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bluelight"
+                    android:text="  BAD  "
+                    android:textColor="@color/white" 
+                    android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+
+			 
+			   <LinearLayout
+                
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                   <TextView
+                    android:id="@+id/textView_eta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="RATING" />
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp" >
+
+                    <ImageView
+                        android:id="@+id/imageViewIconInfoWindow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/black_flag_white" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/black_flag_white" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/black_flag_white" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/black_flag_white" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/black_flag_white" />
+                </LinearLayout>
+</LinearLayout>
+               
+                 <LinearLayout
+                 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView_fare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                   
+                    android:text="COMMENT" />
+		<RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/lighter_gray" >
+
+                    <EditText
+                        android:id="@+id/editText_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="Write comment.."
+                        android:textSize="12sp"
+                        android:padding="10dp"
+                        >
+
+                        <requestFocus />
+                    </EditText>
+
+                    
+
+                </RelativeLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/button_favoritedriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  	android:layout_marginTop="5dp"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:text=" Add as favorite driver "
+                    android:textSize="20dp" />
+				<Button
+                        android:id="@+id/button_done"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                   	    android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/blue"
+                        android:text="   DONE   "
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+              
+				<TextView
+                    android:id="@+id/textView12"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
