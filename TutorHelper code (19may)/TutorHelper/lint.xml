@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CutPasteId">
+        <ignore path="src/com/equiworx/tutor/ParentDetailActivity.java" />
+    </issue>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/equiworx/tutor/ParentListActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/equiworx/tutor/TuterDashboard.java" />
+        <ignore path="src/com/equiworx/util/TutorHelperParser.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/equiworx/parent/ParentMerge_Activity.java" />
+        <ignore path="src/com/roomorama/caldroid/CaldroidGridAdapter.java" />
+    </issue>
+</lint>

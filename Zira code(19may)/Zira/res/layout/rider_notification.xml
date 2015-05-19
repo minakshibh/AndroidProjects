@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+      <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+    		>
+<!--             <ImageView -->
+<!--                 android:id="@+id/user" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_centerInParent="true"   -->
+<!--                 android:padding="10dp" -->
+<!--                 android:src="@drawable/header_user_icon" -->
+<!--                 android:visibility="visible" /> -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"   
+                android:padding="10dp"
+                android:src="@drawable/header_logo" />
+
+            <TextView
+                android:id="@+id/cancelImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+               	android:textColor="@color/white"
+            	android:text="Cancel"
+                android:visibility="gone" />
+        </RelativeLayout>
+    <RelativeLayout
+         	android:id="@+id/Relativelayout_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/btnRequest"
+            android:layout_below="@+id/headerLayout" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <View
+                android:id="@+id/imageView123"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent" />
+           
+            <RelativeLayout
+                android:id="@+id/pickupLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/imgAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/add" />
+
+                <LinearLayout
+                    android:id="@+id/sourceRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/imgAdd"
+                    android:background="@drawable/search_textbox"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/searchIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/search" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:text="pick up location"
+                            android:textColor="@color/app_blue"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtPickUpLoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mapPin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/info_window"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:maxLines="2"
+                    android:text="SET PICKUP LOCATION"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/setPickUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:maxLines="2"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+                 <ImageView
+                android:id="@+id/mapPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/map_pointer" />
+                  </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_imageandtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <com.zira.util.RoundedImageView
+            android:id="@+id/imageViewDriverImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewWhoSendRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/textView_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:textColor="#000000"
+                android:text="Text" 
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

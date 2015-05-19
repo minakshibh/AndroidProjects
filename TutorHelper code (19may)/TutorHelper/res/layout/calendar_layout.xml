@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/LinearLayout_center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Dashboard"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout> -->
+
+   <!--  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" > -->
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" > -->
+<!-- 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="3" > -->
+<!-- 
+                <LinearLayout
+                    android:id="@+id/LinearLayout_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2" > -->
+
+                   <!--  <LinearLayout
+                        android:id="@+id/LinearLayout_top1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="4dp"
+                            android:background="@color/blue" />
+
+                        <TextView
+                            android:id="@+id/textView_topleft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text=" > Active Parents this\n   Month"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=" 500"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp" />
+                    </LinearLayout> -->
+
+                    <!-- <LinearLayout
+                        android:id="@+id/LinearLayout_top2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="4dp"
+                            android:background="@color/blue" />
+
+                        <TextView
+                            android:id="@+id/textView_topright"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text=" >Fees Due"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_fees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=" $1000"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text=" >Fees Collected"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=" $700"
+                            android:textColor="@color/blue"
+                            android:textSize="20sp" />
+                    </LinearLayout> -->
+              <!--   </LinearLayout> -->
+
+                <!--  <ScrollView
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >  -->
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                       	layout="@layout/calendar_view" />
+   			
+                    <!--  <LinearLayout
+                        android:id="@+id/LinearLayout_certerbottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="-8dp"
+                        android:background="@color/caldroid_darker_gray"
+                        android:orientation="horizontal"
+                        android:weightSum="4" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" > 2 Lessons"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" 2.5 Lessons"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_weight="1"
+                            android:text=" >5 Lessons"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-12dp"
+                            android:layout_weight=".8"
+                            android:text=" Blackout Period"
+                            android:textSize="12sp" />
+                    </LinearLayout>  -->
+               <!--  </LinearLayout> -->
+           <!--  </LinearLayout>
+ -->
+            <!-- <LinearLayout
+                android:id="@+id/LinearLayout_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/addStudent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="18dp"
+                    android:text="ADD NEW STUDENT"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="18dp"
+                    android:text="ADD LESSON"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout> -->
+      
+<!--     </ScrollView> -->
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:padding="5dp" >
+
+        <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header_logo" /> -->
+       <ImageView 
+            android:id="@+id/btnCancel"
+          	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"
+            android:src="@drawable/deletenew"
+           />
+
+       <TextView
+           android:id="@+id/textView_lblpromocode"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:text="PROMO CODE"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_promocode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:layout_below="@+id/headerLayout"
+        android:hint="Enter your Promocode"
+        android:inputType="text"
+        android:paddingLeft="7dp"
+        android:textColor="@color/black"
+        android:paddingRight="7dp"
+        android:singleLine="true"
+      
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView_showPromocode"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/editText_promocode"
+        android:layout_above="@+id/btnDone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+      
+        android:background="#FFFFFF"
+         >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_btn_bg"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="DONE"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+      
+         />
+
+</RelativeLayout>

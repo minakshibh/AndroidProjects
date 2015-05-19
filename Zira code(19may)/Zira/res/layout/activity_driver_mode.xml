@@ -1,0 +1,182 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@null"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#6c6c6c" >
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/sliderIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_user_icon"
+                 android:padding="8dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_logo" />
+
+   
+            
+     
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/headerLayout" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <View
+                android:id="@+id/imageView123"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent" />
+
+            <Button
+                android:id="@+id/button_getdrection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+             	android:layout_marginLeft="20dp"
+             	android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:text="GET DIRECTIONS"
+                android:background="@drawable/green_btn_bg"
+                android:layout_marginBottom="45dp"
+                android:visibility="gone"
+                />
+     
+            <Button
+                android:id="@+id/endRideButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/green_btn_bg"
+                android:text="TAP TO DROP OFF"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/riderInfoRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textViewWhoSendRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewDriverImage"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageViewDriverImage"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageViewDriverImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/background_Blue" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp" 
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/acceptButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/rejectButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reject" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start" >
+
+        <RelativeLayout
+            android:id="@+id/header2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:padding="10dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_user_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_logo" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            
+            android:layout_below="@+id/header2"
+            layout="@layout/driver_slider_layout" />
+    </RelativeLayout>
+
+  
+
+</android.support.v4.widget.DrawerLayout>

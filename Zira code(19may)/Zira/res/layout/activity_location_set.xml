@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#071918" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/header_logo" />
+    </RelativeLayout>
+    <LinearLayout
+                android:id="@+id/pickupLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                 >
+
+                <LinearLayout
+                    android:id="@+id/sourceRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_textbox"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/searchIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/search" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" 
+                     
+                        >
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_enter_location"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black" >
+            </AutoCompleteTextView>
+                    
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/btn_cancel" 
+                  
+                    />
+
+           </LinearLayout>
+    <!-- <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/app_bg"
+	android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+    <AutoCompleteTextView
+        android:id="@+id/editText_enter_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/images_03"
+        android:padding="10dp"
+        
+        android:textColor="@color/black"
+        android:singleLine="true" >
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="7"
+        android:background="@drawable/images_05"
+        android:textColor="@color/white" />
+</LinearLayout> -->
+</LinearLayout>

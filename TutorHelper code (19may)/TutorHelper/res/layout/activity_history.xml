@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/main_laoyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bg"
+            android:hint="Search by Parent Id or Parent Name"
+            android:paddingLeft="40dp"
+            android:textSize="13sp" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/editText_search"
+        	android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:layout_margin="10dp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

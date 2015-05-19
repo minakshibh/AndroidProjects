@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7EE"
+    android:orientation="vertical" >
+    
+   <RelativeLayout
+        android:id="@+id/first"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#071918"
+     >
+	<ImageView
+        android:id="@+id/button_rider_Next_regisone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+    	android:src="@drawable/rightarrow"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+     	android:layout_marginTop="10dp"
+     	android:layout_marginBottom="10dp"
+        android:src="@drawable/header_logo" />
+    
+        <ImageView
+            android:id="@+id/button_rider_back_regisone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leftarrow"
+            android:textColor="@color/blue" />
+
+	</RelativeLayout>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/first"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_backgroundblack_round"
+        android:text="Logout"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_FaceBook"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_logout"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_lightgreen_round"
+        android:text="Login With FaceBook"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_Gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_FaceBook"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_lightgreen_round"
+        android:text="Login With Gmail"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFF" />
+
+    
+    
+</RelativeLayout>

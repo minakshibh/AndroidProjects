@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.zira.activities.VehicleInformationActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#071918"
+     >
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+     	android:layout_marginTop="10dp"
+     	android:layout_marginBottom="10dp"
+        android:src="@drawable/header_logo" />
+
+	</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/first"
+        android:orientation="horizontal" >
+        
+        <View 
+             android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:background="#eeeeee"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_half" />
+        
+        <View 
+             android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:background="#eeeeee"
+            android:layout_gravity="center_vertical"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_empty" />
+        
+        <View 
+             android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:background="#eeeeee"
+            android:layout_gravity="center_vertical"/>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_empty" />
+         
+          <View 
+             android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:background="#eeeeee"
+            android:layout_gravity="center_vertical"/>
+          
+    </LinearLayout>
+    <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title"
+        >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+      
+        android:orientation="vertical" >
+		  <TextView
+            android:id="@+id/etaTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By law,California requires you to pass a vehicle inspection(even on newer cars)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"         
+             />
+        
+        <TextView
+            android:id="@+id/etaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VEHICLE INFORMATION"
+            android:textSize="20dp" 
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"         
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/vehicleMakeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="verdana,arial,helvetica"
+            android:gravity="center_horizontal|right"
+            android:textColor="@color/black"
+            android:background="@drawable/textfield" />
+
+        <Spinner
+            android:id="@+id/vehiclemodalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:hint="SelectProspect"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/vehiclemodalYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:textColor="@color/black" />
+        
+        <EditText
+            android:id="@+id/licensePlateNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:hint="License Plate Number"
+            android:paddingLeft="7dp"
+            android:paddingRight="0dp"
+            android:textColor="@color/black" />
+        
+        <Spinner
+            android:id="@+id/countryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:textColor="@color/black" />
+        
+        <Spinner
+            android:id="@+id/StateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:textColor="@color/black" />
+        
+        <Button 
+            
+            android:id="@+id/SaveAndContinue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SAVE &amp; CONTINUE"  
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/green_btn_bg"/>
+        
+        <TextView 
+            
+            android:id="@+id/SaveAndContinue11"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text=""  
+            android:textColor="#ffffff"
+            android:padding="10dp"
+             />
+       
+    </LinearLayout>
+</ScrollView>
+
+    
+
+</RelativeLayout>

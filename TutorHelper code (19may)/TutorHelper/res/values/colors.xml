@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green">#006400</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="darkblue">#0000ff</color>
+    <color name="darkpink">#cc0066</color>
+    <color name="toti">#00ff00</color>
+    <color name="black">#000000</color>	
+    <color name="parple">#663399</color>	
+    <color name="appbackground">#FF7F50</color>
+     <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+<!--     <color name="transparent">#60ffffff</color> -->
+    <color name="appTextBlue">#54b5c5</color>
+	<color name="appBlue">#54c5d5</color>
+	 <color name="transparent">#00000000</color>
+  
+	<color name="gray">#2f2f2f</color>
+   
+</resources>

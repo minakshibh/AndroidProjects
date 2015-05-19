@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.zira.activities.VehicleInformationActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header_logo" />
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/headerLayout"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_full" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_full" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_half" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageLayout"  
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="40dp" >
+
+            <TextView
+                android:id="@+id/etaTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="By law,California requires you to pass a vehicle inspection(even on newer cars)"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:id="@+id/etaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOCUMENT UPLOAD"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/vehicleImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/upload_icon" />
+
+                <TextView
+                    android:id="@+id/vehicleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/vehicleImage"
+                    android:text="VEHICLE IMAGE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vehicleText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/vehicleImage"
+                    android:text="choose a file"
+                    android:textColor="@color/app_blue"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/RCImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/upload_icon" />
+
+                <TextView
+                    android:id="@+id/RCText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/RCImage"
+                    android:text="RC IMAGE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RCText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/RCImage"
+                    android:text="choose a file"
+                    android:textColor="@color/app_blue"
+                   />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/licenceImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/upload_icon" />
+
+                <TextView
+                    android:id="@+id/licenceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/licenceImage"
+                    android:text="DRIVING LICENCE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/licenceText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/licenceImage"
+                    android:text="choose a file"
+                    android:textColor="@color/app_blue"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/medicalImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/upload_icon" />
+
+                <TextView
+                    android:id="@+id/medicalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/medicalImage"
+                    android:text="MEDICAL CERTIFICATE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medicalText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/medicalImage"
+                    android:text="choose a file"
+                    android:textColor="@color/app_blue"
+               />
+            </RelativeLayout>
+
+             <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                   
+                      
+                    >
+            <CheckBox
+                android:id="@+id/checkBox_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                android:text="" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    >
+                 
+		<TextView
+                android:id="@+id/etaTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="I plan to drive a commercially insured and licensed livery or For-Hire vehicle."
+                android:textColor="@color/black"
+                 />
+		</LinearLayout>
+		</LinearLayout>
+            <Button
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_btn_bg"
+                android:padding="10dp"
+                android:text="DONE"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

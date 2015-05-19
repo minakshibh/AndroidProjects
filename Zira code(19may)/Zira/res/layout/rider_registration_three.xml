@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    
+ <RelativeLayout
+     android:id="@+id/first"
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:background="#222222"
+     android:padding="10dp"
+      >
+	
+ 	
+  	<ImageView
+        android:id="@+id/button_rider_back_registhree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+      	android:src="@drawable/leftarrow"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+        android:src="@drawable/header_logo" />
+
+	</RelativeLayout>
+	
+       <LinearLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/first"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_full" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_full" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_half" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:background="#eeeeee" />
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/layout_center"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/progressbar"
+     >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+        	android:textColor="@color/black"
+            android:text="Credit Card Number" />
+   
+    <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/textfield"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+  <ImageView
+        android:id="@+id/imageView_creditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/credit_icon" />
+          
+    <EditText
+        android:id="@+id/editText_rider_creditCardNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="1234 5678 9101 1121" 
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:maxLength="16"
+        android:background="@null">
+         <requestFocus />
+	</EditText>
+    
+    </LinearLayout>
+
+   
+
+      <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+        	android:textColor="@color/black"
+            android:text="CCV" />
+    <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/textfield"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+  <ImageView
+        android:id="@+id/imageView_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/cvv_icon" />
+          
+    <EditText
+        android:id="@+id/editText_riderCVV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="CVV" 
+        android:textColor="#000000"
+        android:textSize="16sp"
+          android:inputType="number"
+              android:maxLength="3"
+        android:background="@null"/>
+
+    
+    </LinearLayout>
+     <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+        	android:textColor="@color/black"
+            android:text="Expiry Date" />
+    <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/textfield"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        >
+  <ImageView
+        android:id="@+id/imageView_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/expiry_icon" />
+          
+    <EditText
+        android:id="@+id/editText_riderExpiryDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Expiry Date" 
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="@null"/>
+
+    
+    </LinearLayout>
+    <include 
+	    layout="@layout/monthyearpicker"
+	    android:layout_alignParentBottom="true"
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    android:visibility="gone"
+	    />
+    
+     <LinearLayout
+        android:id="@+id/last"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+         >
+
+        <Button
+            android:id="@+id/btn_newDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Done"
+            android:background="@drawable/green_btn_bg"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        
+<!--           <Button -->
+<!--             android:id="@+id/btn_newCancel" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:textStyle="bold" -->
+<!--             android:textSize="20sp" -->
+<!--             android:background="@drawable/button_backgroundblack_round" -->
+<!--             android:textColor="#FFFFFF" -->
+<!--             android:text="Cancel" /> -->
+        
+    </LinearLayout>
+    </LinearLayout>
+   
+   
+</RelativeLayout>

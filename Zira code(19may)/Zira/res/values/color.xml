@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#147ebf</color>
+    <color name="blue2">#2D2643</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#4cb748</color>
+    <color name="skyblue">#41CDF0</color>
+    <color name="yellow">#fdd301</color>
+    <color name="darkblue">#030f33</color>
+    <color name="pink">#FF6666</color>
+    <color name="black">#000000</color>
+    <color name="parple">#663399</color>
+    <color name="appbackground">#FF7F50</color>
+    <color name="transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="lighter_gray">#ddd</color>
+    <color name="gray">#2f2f2f</color>
+    <color name="bluelight">#3399FF</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="background_Pink">#EE2C73</color>
+    <color name="background_Green">#25A866</color>
+    <color name="background_Blue">#22AFC3</color>
+    <color name="background_Orange">#F03C2B</color>
+    <color name="background_white">#E2DCCD</color>
+    <color name="background_lightBrown">#F4814B</color>
+    <color name="background_yellow">#FBEC49</color>
+    <color name="app_bg">#F5F7EE</color>
+    <color name="app_green">#33CC99</color>
+	 <color name="app_blue">#04B4AE</color>
+</resources>

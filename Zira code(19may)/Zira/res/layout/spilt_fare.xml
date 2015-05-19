@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#071918"
+     >
+		<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+     	android:layout_marginTop="10dp"
+     	android:layout_marginBottom="10dp"
+        android:src="@drawable/header_logo" />
+    
+  <!--       <ImageView
+            android:id="@+id/button_rider_back_regisone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leftarrow"
+            android:textColor="@color/blue" /> -->
+        
+      <Button
+          android:id="@+id/btn_Done"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:background="@color/transparent"
+          android:text="Cancel"
+          android:visibility="gone"
+          android:textStyle="bold"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:textColor="@color/blue" />
+
+	</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <ImageView
+        android:id="@+id/btn_spiltFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/green_btn_bg"
+        android:text="Spilt Fare"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Spilt Fare"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_spiltFare"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/green_btn_bg"
+        android:text="Pay"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_spiltFare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Pay"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+<ListView
+    android:id="@+id/listViewShowContact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+
+</LinearLayout>

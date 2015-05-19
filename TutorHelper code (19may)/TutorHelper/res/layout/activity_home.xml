@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="60dp"
+        />
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="90dp"
+       
+       >
+       <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutorRegLayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+             android:background="@drawable/menus_bg"
+            android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"  >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tutor_reg_btn"
+                android:id="@+id/tutorReg"/>
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+             android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="12dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:id="@+id/tutorLogin"
+                android:src="@drawable/tutor_login_btn"/>
+            
+        	</LinearLayout>
+        <LinearLayout 
+             android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:id="@+id/parentLogin"
+                android:src="@drawable/parent_login_btn"/>
+            
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+    
+    <include layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/headerLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blue_bg"
+        android:padding="10dp"
+        
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_icon"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="Please login here"/>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/input_field_left">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user_icon"/>
+            </RelativeLayout>
+            <EditText 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="TutorId/ParentId"
+               android:paddingLeft="10dp"
+                  android:background="@drawable/input_field_right"
+                  android:singleLine="true"
+                android:id="@+id/userId"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:background="@drawable/input_field"
+            android:layout_marginTop="10dp">
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/input_field_left">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/password_icon"/>
+            </RelativeLayout>
+            <EditText 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/password"
+              android:background="@drawable/input_field_right"
+              android:paddingLeft="10dp"
+              android:singleLine="true"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Click here"
+                android:textStyle="bold"
+                android:textColor="@color/appTextBlue" />
+        </LinearLayout>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Log In"
+            android:background="@color/appBlue"
+            android:padding="10dp"
+            android:id="@+id/logIn"/>
+        
+        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have account?"
+                android:layout_marginTop="15dp"
+                android:id="@+id/regText"
+                android:textColor="#000000"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sign Up here"
+            android:padding="10dp"
+            android:background="@color/appBlue"
+            android:id="@+id/signUp"/>
+    </LinearLayout>
+</RelativeLayout>

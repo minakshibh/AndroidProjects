@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+    
+  <RelativeLayout
+ 	android:id="@+id/headerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" 
+    android:padding="2dp">
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        android:id="@+id/back"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"/>
+    
+    <TextView
+    	android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutor Helper"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        />
+    
+       <ImageView
+           android:id="@+id/rightmenu"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+          android:visibility="visible" />
+
+       <TextView
+           android:id="@+id/textView_cancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignTop="@+id/back"
+           android:textColor="@color/white"
+           android:layout_alignBaseline="@+id/title"
+           android:text="CANCEL" />
+    
+</RelativeLayout>
+
+ <!--  <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="AutoCompleteTextView" >
+
+        <requestFocus />
+    </AutoCompleteTextView> -->
+    <AutoCompleteTextView
+        android:id="@+id/editText_search"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        android:layout_below="@+id/headerLayout"
+        android:paddingLeft="40dp"
+        android:textSize="13sp"
+        android:visibility="visible"
+         android:hint="Search by Parent Id or Parent Name" >
+   <requestFocus /> 
+    </AutoCompleteTextView> 
+
+<!-- <SearchView
+    android:id="@+id/editText_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headerLayout"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:hint="Search by Parent Id or Parent Name"  -->
+   
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/textView_sort"
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" >
+
+    </ListView>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+        android:orientation="horizontal">
+        <LinearLayout 
+               android:id="@+id/sort_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+        	android:background="#333333"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sort_icon"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+               android:id="@+id/filter_parentlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0.5dp"
+            android:padding="10dp"
+        android:background="#333333"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_icon"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_search"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+         />
+
+</RelativeLayout>

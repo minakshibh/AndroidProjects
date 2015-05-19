@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7EE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#071918" >
+
+<!--         <ImageView -->
+<!--             android:id="@+id/button_rider_back_registhree" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:src="@drawable/leftarrow" /> -->
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/header_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/etaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Credit Card Number"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_creditCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etaTextView"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/regis_text"
+            android:drawableLeft="@drawable/credit_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="1234 5678 1234 5678"
+            android:inputType="number"
+            android:maxLength="16"
+            android:textColor="@color/black"
+            android:padding="5dp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_creditCardNumber"
+            android:layout_marginTop="5dp"
+            android:text="CVV"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_CVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/regis_text"
+            android:drawableLeft="@drawable/cvv_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/black"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_CVV"
+           
+            android:layout_marginTop="5dp"
+            android:text="Expiry Date"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_ExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/regis_text"
+            android:drawableLeft="@drawable/expiry_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Expiry Date"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:padding="5dp" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/editText_ExpiryDate"
+            layout="@layout/monthyearpicker"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/last"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_ExpiryDate"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_DoneCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_images"
+                android:text="Done"
+                android:textColor="#FFFFFF"
+               />
+
+            <Button
+                android:id="@+id/btn_CancelCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_backgroundblack_round"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

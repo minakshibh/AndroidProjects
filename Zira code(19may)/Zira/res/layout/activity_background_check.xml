@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.zira.BackgroundCheckActivity" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header_logo" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="4"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_full" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_half" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#eeeeee" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_empty" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#eeeeee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+			 <TextView
+		            android:id="@+id/etaTextView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="By law,California requires you to pass a vehicle inspection(even on newer cars)"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginRight="20dp"
+		            android:textColor="@color/black"         
+		             />
+                <TextView
+                    android:id="@+id/etaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BACKGROUND CHECK"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addressOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="Address"
+                    android:textColor="@color/black"
+                    android:paddingLeft="7dp" />
+
+                <EditText
+                    android:id="@+id/addressTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="Address2"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:paddingLeft="7dp" />
+
+                <EditText
+                    android:id="@+id/zipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="Zip Code"
+                      android:textColor="@color/black"
+                    android:paddingLeft="7dp" />
+
+         <!--        <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="City"
+                      android:textColor="@color/black"
+                    android:paddingLeft="7dp" /> -->
+
+				 <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield" />
+	
+                <Spinner
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield" />
+
+                <EditText
+                    android:id="@+id/licenceNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="Driving Licence Number"
+           
+                     android:textColor="@color/black"
+                    android:paddingLeft="7dp" />
+
+                <Spinner
+                    android:id="@+id/licenceState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                      android:textColor="@color/black"
+                    android:background="@drawable/textfield" />
+
+                <EditText
+                    android:id="@+id/licenceExpiration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:focusable="false"
+                      android:textColor="@color/black"
+                    android:hint="Driving Licence Expiration Date"
+                    android:paddingLeft="7dp" />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:focusable="false"
+                    android:hint="DOB"
+                      android:textColor="@color/black"
+                    android:paddingLeft="7dp" />
+
+                <EditText
+                    android:id="@+id/securityNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textfield"
+                    android:hint="Social Security Number"
+                    android:inputType="number"
+                      android:textColor="@color/black"
+                    android:paddingLeft="7dp" />
+
+                
+            <!--     <CheckBox android:id="@+id/chkAge"
+                    android:text="I hereby declare that I am above 18 years."
+                    android:checked="false"/> -->
+                
+                
+                <Button
+                    android:id="@+id/SaveAndCuntinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/green_btn_bg"
+                    android:padding="10dp"
+                    android:text="SAVE &amp; CONTINUE"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

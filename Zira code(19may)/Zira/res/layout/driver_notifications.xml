@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	
+ 
+    >
+<RelativeLayout
+     android:id="@+id/header"
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:background="#222222"
+     android:padding="10dp">
+<!--   	<ImageView -->
+<!--         android:id="@+id/btn_back" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--       	android:src="@drawable/header_user_icon" -->
+      	 
+<!-- /> -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+        android:src="@drawable/header_logo" />
+
+	</RelativeLayout>
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_below="@+id/header"
+     >
+     
+    
+		
+     <RelativeLayout
+          android:id="@+id/RelativeLayout_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="fill_parent"
+                android:background="@color/transparent"
+                android:layout_height="fill_parent" />
+
+            <View
+                android:id="@+id/imageView123"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent" />
+            </RelativeLayout>
+            
+      <LinearLayout
+        android:id="@+id/rel_imageandtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <com.zira.util.RoundedImageView
+            android:id="@+id/imageViewDriverImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bg_slider" />
+
+	        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:orientation="vertical">
+	
+	        <TextView
+	            android:id="@+id/textView_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	       		android:textColor="@color/black"
+	            android:textSize="20dp"
+	          	android:layout_gravity="center_vertical"
+	            android:text="TextView1" />
+	
+	        <TextView
+	            android:id="@+id/textView_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="TextView2"
+	            android:textColor="@color/black" />
+			</LinearLayout>
+            
+
+    
+      </LinearLayout>
+      <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+         
+        >
+    <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_red_round"
+            android:padding="10dp"
+            android:text="CANCEL RIDE"
+            android:textColor="@color/white"
+            />
+		</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLinaerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/counterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="10"
+            android:textColor="@color/app_green"
+            android:textStyle="bold"
+            android:textSize="50sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:progress="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Touch Anywhere to Accept"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acceptLinaerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:background="@color/transparent"
+        android:visibility="gone"
+		>
+        <Button
+            android:id="@+id/SeeRouteButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="SEE ROUTE ON MAP"
+            android:background="@drawable/button_lightgreen_round"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/arrivedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ARRIVED"
+            android:background="@drawable/button_lightgreen_round"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/beginJourneyLinaerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone"
+       >
+
+             <!--    <Button
+            android:id="@+id/After_seeRouteButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="SEE ROUTE ON MAP"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/button_lightgreen_round"
+            android:textColor="@color/white" /> -->
+        
+        <Button
+            android:id="@+id/beginTripButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="BEGIN TRIP"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/button_lightgreen_round"
+            android:textColor="@color/white"
+             />
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

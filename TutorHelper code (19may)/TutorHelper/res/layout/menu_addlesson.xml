@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  
+<!-- <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:background="@color/black"
+    android:id="@+id/llayout" >
+    
+           <Button 
+            android:id="@+id/btn_lessonlist"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Lesson List"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+  />
+          
+         <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="#000000"
+            
+          />
+    
+       <Button 
+            android:id="@+id/btn_mylesson"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+        
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15dp"
+        
+           android:textColor="@color/black"
+            android:text="My lesson"
+          
+          
+            
+            />
+         <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="#000000"
+            
+          />
+             <Button 
+            android:id="@+id/btn_logout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+          
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Logout"
+          	
+          
+            
+            />
+
+</LinearLayout> -->
+
+</ScrollView>

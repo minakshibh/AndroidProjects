@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" 
+    >
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout" />
+
+  <!--   <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headerLayout"
+        layout="@layout/menu_addlesson"
+        android:background="@color/black"
+        android:visibility="visible" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerLayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+         
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Enter the information of Lesson"
+                android:textSize="16sp" /> -->
+
+      <!--       <LinearLayout
+ -->          <!--       android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topic" />
+
+                <EditText
+                    android:id="@+id/topic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Topic" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android1:layout_margin="10dp"
+                android:background="@drawable/listview_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description :"
+                        android:textColor="@color/black"
+                        android1:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/desription"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                       android1:hint="Enter description"
+                        android:background="@drawable/edittext_bg"
+                        android:maxLines="2"
+                        android:minLines="2" />
+                </LinearLayout>
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    
+                      android:textColor="@color/black"
+                    android:text="Start Time:" />
+
+         <!--        <EditText
+                    android:id="@+id/startdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="start time"
+                    android:padding="4dp" /> -->
+
+                <TextView
+                    android:id="@+id/starttime_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                  
+                    android:text="Select start time"
+                    android:textColor="@color/appBlue" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Time:"
+                     android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+          <!--       <EditText
+                    android:id="@+id/enddate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="End Time"
+                    android:padding="4dp" /> -->
+
+                <TextView
+                    android:id="@+id/endtime_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                 android:textColor="@color/appBlue"
+                    android:layout_weight="1"
+                    android:text="end Time" />
+            </LinearLayout>
+
+<!--             <TimePicker -->
+<!--                 android:id="@+id/timePicker_start" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:visibility="gone" /> -->
+
+          <!--   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/timedone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:text="Done" />
+
+                <Button
+                    android:id="@+id/timecancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     android:background="@color/blue"
+                     android1:layout_marginLeft="5dp"
+                    android:text="Cancel" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+              
+            </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/timePicker_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="horizontal" -->
+<!--                 android:weightSum="2" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/btn_timeenddone" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                         android:background="@color/blue" -->
+<!--                     android:text="Done" /> -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/bnt_timeendcancel" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                         android:background="@color/blue" -->
+<!--                         android1:layout_marginLeft="5dp" -->
+<!--                     android:text="Cancel" /> -->
+<!--             </LinearLayout> -->
+            
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:orientation="horizontal"
+                 android:weightSum="2" >
+
+                 <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="Lesson Start Date : "
+                     android:textColor="@color/black"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/ed_Lessondate"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:hint="select Lesson Date"
+                     android:textColor="@color/appBlue" />
+
+                 <!--
+                     <Button
+                    android:id="@+id/btn_Lessondate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Edit" />
+                 -->
+
+            </LinearLayout>
+
+<!--             <DatePicker -->
+<!--                 android:id="@+id/datePicker_lessondate" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:visibility="gone" /> -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="horizontal" -->
+<!--                 android:weightSum="2" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/btn_donelesson" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                         android:background="@color/blue" -->
+<!--                     android:text="Done" /> -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/btn_cancellesson" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                         android:background="@color/blue" -->
+<!--                         android1:layout_marginLeft="5dp" -->
+<!--                     android:text="Cancel" /> -->
+<!--             </LinearLayout> -->
+            
+                   <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:orientation="horizontal"
+                       android:weightSum="2" >
+
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="Lesson End Date : "
+                           android:textColor="@color/black"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/ed_Lessonenddate"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:hint="Lesson end Date"
+                           android:textColor="@color/appBlue" />
+<!--  <Button
+                    android:id="@+id/btn_Lesson_enddate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Edit" /> -->
+            </LinearLayout>
+
+<!--             <DatePicker -->
+<!--                 android:id="@+id/datePicker_lessonenddate" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:visibility="gone" /> -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="10dp" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:orientation="horizontal" -->
+<!--                 android:weightSum="2" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/btn_donelessonend" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                         android:background="@color/blue" -->
+<!--                     android:text="Done" /> -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/btn_cancellessonend" -->
+<!--                     android:layout_width="0dp" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_weight="1" -->
+<!--                     android1:layout_marginLeft="5dp" -->
+<!--                         android:background="@color/blue" -->
+<!--                     android:text="Cancel" /> -->
+<!--             </LinearLayout> -->
+            
+            
+            
+            
+            
+            
+            
+       </LinearLayout>     
+            
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+    android1:layout_marginLeft="10dp"
+    android1:layout_marginRight="10dp"
+     android:weightSum="6" >
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="5"
+         android:text="Days"
+         android:textColor="@color/black"
+         android1:layout_marginLeft="10dp"
+         android:textStyle="bold" />
+
+     <CheckBox
+         android:id="@+id/checkBox_all"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+	     android:layout_marginRight="14dp" />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android1:layout_marginLeft="10dp"
+                android1:layout_marginRight="10dp"
+                 android:background="@drawable/listview_bg"
+                android:orientation="vertical" >
+
+                <include
+                    android1:layout_width="fill_parent"
+                    android1:layout_height="wrap_content"
+                    layout="@layout/day_layout" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+               android:background="@drawable/listview_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android1:weightSum="2" >
+           
+
+                    <TextView
+                        android:id="@+id/addstudents"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android1:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="Select Students"
+                         android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android1:id="@+id/textView_students"
+                        android1:layout_width="0dp"
+                        android1:layout_height="wrap_content"
+                        android1:layout_weight="1"
+                        android:textColor="@color/black"
+                        android1:text="Student no" />
+                  
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android1:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Recuring : "
+                        android1:layout_marginTop="5dp"
+                        android:textColor="@color/appBlue"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_isrec"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                           android:layout_weight="2"
+                           android1:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="NO" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android1:layout_margin="10dp"
+                    android:background="@color/appBlue"
+                    android:padding="15dp"
+                    android:text="Add Lesson" />
+
+            </LinearLayout>
+
+          <!--   <Button
+                android:id="@+id/lessonlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="lesson list" />
+
+            <Button
+                android:id="@+id/mylist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="mylist  list" /> -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

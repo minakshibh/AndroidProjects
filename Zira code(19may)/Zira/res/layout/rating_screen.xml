@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+<RelativeLayout
+        android:id="@+id/first"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#071918"
+     >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_centerInParent="true"
+     	android:layout_marginTop="10dp"
+     	android:layout_marginBottom="10dp"
+        android:src="@drawable/header_logo" />
+
+	</RelativeLayout>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/first"
+     >
+<RelativeLayout
+    android:id="@+id/mainRelative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/first" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Your Fare Is : "
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_ShowFare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text=" 10 $"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/textView_ShowFare"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="20dp"
+    android:text="Rate Your Ride"
+    android:textColor="@color/black"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout
+        android:id="@+id/Stars"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+         >
+            <ImageView 
+             android:id="@+id/image1"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/star"
+             android:layout_marginLeft="5dp"
+             android:padding="5dp"
+             android:layout_gravity="center_vertical"
+             />
+            <ImageView 
+             android:id="@+id/image2"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/star"
+             android:padding="5dp"
+            android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             />
+             <ImageView 
+             android:id="@+id/image3"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/star"
+             android:padding="5dp"
+              android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             />
+             <ImageView 
+             android:id="@+id/image4"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/star"
+             android:padding="5dp"
+              android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             />
+             <ImageView 
+             android:id="@+id/image5"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/star"
+             android:padding="5dp"
+              android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             />
+	</LinearLayout>
+	<View 
+	    android:id="@+id/view1"
+	    android:layout_height="1dip"
+	    android:background="#BDBDBD"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@+id/Stars"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="15dp"
+	    />
+	
+	<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/view1"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="20dp"
+    android:text="Comment"
+    android:textColor="@color/black"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<EditText
+	    android:id="@+id/editText_comment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textView4"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/black"
+	    android:background="@drawable/textfield"
+	    android:padding="5dp"
+	   
+	    android:lines="3"
+	    android:maxLines="3"
+	 >
+
+    <requestFocus />
+	</EditText>
+	<ImageView
+	    android:id="@+id/ButtonSendFeedBack"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:text="SEND FEEDBACK"
+	    android:textColor="#FFFFFF"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginLeft="25dp"
+	    android:textSize="20sp"
+	    android:layout_below="@+id/editText_comment"
+	    android:src="@drawable/green_btn_bg"
+	     />
+		<TextView
+	    android:id="@+id/text"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="SEND FEEDBACK"
+	    android:textColor="#FFFFFF"
+	    android:layout_centerInParent="true"
+	    android:layout_marginTop="26dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginLeft="25dp"
+	  	android:layout_below="@+id/editText_comment"
+	
+	     />
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
