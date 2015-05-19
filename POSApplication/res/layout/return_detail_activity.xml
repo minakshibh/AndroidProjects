@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/app_base"
+       android:id="@+id/header"
+        >
+        <Button 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="4dp"            
+            android:layout_marginRight="4dp"  
+            android:layout_marginTop="8dp"  
+            android:layout_marginBottom="8dp"            
+            android:text="Back"
+            android:background="@drawable/button_back"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Item Returns"
+            android:id="@+id/txtHeader"
+            android:layout_centerInParent="true"
+             android:textSize="24sp"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff"
+	        android:background="@color/app_base"
+	        android:padding="10dp"
+            />
+       
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/layoutReceipt"        
+   	   android:background="@color/lighter_app_base"
+        android:padding="5dp"
+   	   >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Receipt"
+            android:layout_alignParentLeft="true"
+             android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:textColor="@color/app_base"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+             android:textSize="20sp"
+             android:id="@+id/txtReceiptHeaderTotal"
+	        android:textStyle="bold"
+	        android:textColor="@color/app_base"
+            />
+        
+    </RelativeLayout>
+
+     <TextView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+	        android:background="@color/app_base"       
+            />
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:orientation="vertical"
+         android:id="@+id/receiptList"         
+         >
+         
+     </LinearLayout>
+     
+      <TextView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+	        android:background="@color/app_base"       
+            />
+      
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/layoutReturn"
+        
+   	   android:background="@color/lighter_app_base"
+        android:padding="5dp"
+   	   >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Return"
+            android:layout_alignParentLeft="true"
+             android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:textColor="@color/app_base"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+             android:textSize="20sp"
+             android:id="@+id/txtReturnHeaderTotal"
+	        android:textStyle="bold"
+	        android:textColor="@color/app_base"
+            />
+        
+    </RelativeLayout>
+
+     <TextView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+	        android:background="@color/app_base"       
+            />
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:orientation="vertical"
+         android:id="@+id/returnList"         
+         >
+         
+     </LinearLayout>
+     
+     
+   	<LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	   android:orientation="vertical"
+   	   android:padding="5dp"
+   	   android:layout_marginTop="3dp"
+   	   android:background="@color/lighter_app_base"
+   	    >
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Receipt"
+   	            android:gravity="center"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Return"
+   	            android:gravity="center"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:id="@+id/labelReturn"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	    
+   	     <TextView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+	        android:background="@color/app_base"       
+            />
+   	     
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="5dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:text="Sub Total"
+   	            android:textStyle="bold"
+   	            android:layout_height="wrap_content"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Receipt"
+   	            android:id="@+id/txtReceiptSubTotal"
+   	            android:gravity="center"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	             android:id="@+id/txtReturnSubTotal"
+   	             android:gravity="center"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="5dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:text="Discount"
+   	            android:textStyle="bold"
+   	            android:textColor="#ff0000"
+   	            android:layout_height="wrap_content"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Receipt"
+   	            android:id="@+id/txtReceiptDisc"
+   	            android:gravity="center"
+   	             android:textColor="#ff0000"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	             android:id="@+id/txtReturnDisc"
+   	             android:gravity="center"
+   	             android:textColor="#ff0000"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="5dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:text="VAT"
+   	            android:textStyle="bold"
+   	            android:layout_height="wrap_content"
+   	            android:textColor="#0000ff"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Receipt"
+   	            android:gravity="center"
+   	            android:id="@+id/txtReceiptVAT"
+   	            android:textColor="#0000ff"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	             android:id="@+id/txtReturnVAT"
+   	             android:gravity="center"
+   	            android:textColor="#0000ff"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="5dp"
+   	        android:orientation="horizontal"
+   	        android:id="@+id/mdiscountLayout"
+   	        >
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:text="M-Discount"
+   	            android:textStyle="bold"
+   	            android:layout_height="wrap_content"
+   	            android:textColor="#ff0000"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	            android:id="@+id/txtReceiptMDiscount"
+   	            android:gravity="center"
+   	            android:textColor="#ff0000"
+   	            android:textStyle="bold"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	            android:gravity="center"
+   	             android:id="@+id/txtMDiscount"
+   	            android:textColor="#ff0000"
+   	            android:textStyle="bold"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	    <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="5dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:text="Total"
+   	            android:textStyle="bold"
+   	            android:layout_height="wrap_content"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="Receipt"
+   	            android:id="@+id/txtReceiptTotal"
+   	            android:gravity="center"
+   	            android:textColor="@color/app_base"
+   	            android:textStyle="bold"
+   	            android:textSize="18sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text=""
+   	            android:gravity="center"
+   	             android:id="@+id/txtReturnTotal"
+   	            android:textColor="@color/app_base"
+   	            android:textStyle="bold"
+   	            android:textSize="18sp"/>
+   	    </LinearLayout>
+   	     
+   	</LinearLayout>
+   	
+  <LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	   android:orientation="horizontal"
+   	   android:padding="5dp"
+   	   android:layout_marginTop="10dp"
+   	    >
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Date"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_marginLeft="4dp"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtDate"
+   	            android:textSize="16sp"
+   	            android:singleLine="true"
+   	            />
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="10dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Time"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtTime"
+   	            android:layout_marginLeft="4dp"
+   	            android:singleLine="true"
+   	            android:textSize="16sp"
+   	            />
+   	    </LinearLayout>
+   	    
+   	</LinearLayout>
+   	
+   <LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	   android:orientation="horizontal"
+   	   android:padding="5dp"
+   	   android:layout_marginTop="10dp"
+   	    >
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Branch"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_marginLeft="4dp"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtBranch"
+   	            android:textSize="16sp"
+   	            android:singleLine="true"
+   	            />
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="10dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="POS"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtPOS"
+   	            android:layout_marginLeft="4dp"
+   	            android:singleLine="true"
+   	            android:textSize="16sp"
+   	            />
+   	    </LinearLayout>
+   	    
+   	</LinearLayout>
+   	
+    <LinearLayout
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	   android:orientation="horizontal"
+   	   android:padding="5dp"
+   	   android:layout_marginTop="10dp"
+   	    >
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Employee"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_marginLeft="4dp"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtEmployee"
+   	            android:textSize="16sp"
+   	            android:singleLine="true"
+   	            />
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="10dp"
+   	        android:orientation="horizontal">
+   	    
+   	        <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Trans. Id"
+   	            android:textStyle="bold"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="16sp"/>
+   	        
+   	        <TextView 
+   	            android:layout_width="fill_parent"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtTransId"
+   	            android:layout_marginLeft="4dp"
+   	            android:singleLine="true"
+   	            android:textSize="16sp"
+   	            />
+   	    </LinearLayout>
+   	    
+   	</LinearLayout>
+   	
+    <Button 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnSelectReceipt"
+   	        android:textColor="@color/white"
+   	        android:background="@drawable/button_shape"
+   	        android:layout_margin="5dp"
+   	        android:text="Select Receipt"/>
+    
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:id="@+id/footer"
+   	    android:padding="5dp"
+   	    android:layout_alignParentBottom="true"
+   	    android:orientation="horizontal"
+   	    >
+   	    <Button 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnCashReturn"
+   	        android:textColor="@color/white"
+   	        android:background="@drawable/button_shape"
+   	        android:text="Return By Cash"/>
+   	    
+   	    <Button 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnCardReturn"
+   	        android:textColor="@color/white"
+   	        android:layout_marginLeft="5dp"
+   	        android:background="@drawable/button_shape"
+   	        android:text="Return By Card"/>
+   	    
+   	     <Button 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnVoucherReturn"
+   	        android:layout_marginLeft="5dp"
+   	        android:textColor="@color/white"
+   	        android:background="@drawable/button_shape"   	        
+   	        android:text="Return Voucher"/>
+   	     
+   	</LinearLayout>
+   	
+   	</LinearLayout>
+   	</ScrollView>
+</LinearLayout>

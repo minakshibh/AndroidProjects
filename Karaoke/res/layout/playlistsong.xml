@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/app_bg"
+    >
+    
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="@color/black"
+    android:padding="@dimen/margin"
+    >
+    <ImageButton 
+        android:id="@+id/back"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:background="@drawable/back_btn_selector"
+        />
+    <TextView 
+        android:id="@+id/playlistName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:layout_toRightOf="@+id/back"
+        android:textColor="@color/white"
+        android:text="PlayList Name"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+    <ImageButton 
+        android:id="@+id/add"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/add_btn"
+        android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+        />
+    <ImageButton 
+        android:id="@+id/edit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/add"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edit_icon"
+      
+        />
+</RelativeLayout>
+	<ListView 
+	    android:id="@+id/playlistsong"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:dividerHeight="2dp"
+       android:divider="@android:color/white"
+	    android:layout_margin="@dimen/margin"
+	    android:background="@drawable/list_bg"
+	     android:listSelector="@drawable/list_item_selector"
+	    ></ListView>
+	
+
+</LinearLayout>

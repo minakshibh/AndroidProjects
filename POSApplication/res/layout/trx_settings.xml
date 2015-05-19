@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/app_base"
+       
+        >
+        <Button 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+           	android:layout_margin="5dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Master Server Config Settings"
+            android:id="@+id/txtHeader"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/done"
+            android:layout_toRightOf="@+id/back"
+             android:textSize="17sp"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:background="@color/app_base"
+	        android:padding="10dp"
+            />
+        <Button 
+            android:id="@+id/done"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Done"
+             android:textColor="@color/white"
+             android:background="@drawable/button_shape"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/productId"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        
+        />
+    <TextView 
+         android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="@color/app_base"
+        />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="UserName"
+            android:textSize="18sp"
+	       
+	
+            />
+        <EditText 
+            android:id="@+id/txtUsername"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textSize="18sp"
+	       
+	        
+            />
+        
+        
+    </LinearLayout>
+    <TextView 
+         android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+       
+        android:background="@color/app_base"
+        />
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="Domain"
+            android:textSize="18sp"
+	       
+	      
+            />
+        <EditText 
+            android:id="@+id/txtDomain"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_weight="0.4"
+             android:textSize="18sp"
+	       
+	       
+            />
+        
+        
+    </LinearLayout>
+    <TextView 
+         android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+       
+        android:background="@color/app_base"
+        />
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="Password"
+             android:textSize="18sp"
+	       
+	        
+            />
+        <EditText 
+            android:id="@+id/txtPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+	       
+	     
+            />
+        
+        
+    </LinearLayout>
+   
+     
+    <TextView 
+         android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+       
+        android:background="@color/app_base"
+        />
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="Local Server Path"
+             android:textSize="18sp"
+	    
+            />
+        <EditText 
+            android:id="@+id/localServerPath"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textSize="18sp"
+	       
+	        
+            />
+        
+        
+    </LinearLayout>
+    <TextView 
+         android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+       
+        android:background="@color/app_base"
+        />
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="Remote Server Path"
+             android:textSize="18sp"
+	       
+	       
+            />
+        <EditText 
+            android:id="@+id/remoteServerPath"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:layout_weight="0.4"
+            android:textSize="18sp"
+	       
+	       
+            />
+        
+        
+    </LinearLayout>
+    
+</LinearLayout>

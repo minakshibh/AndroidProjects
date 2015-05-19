@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    
+    <TextView 
+        android:id="@+id/manual"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Manual Discount"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        />
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="Total amount"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    
+	    />
+    <EditText 
+        android:id="@+id/totalAmount"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="0"
+        android:editable="false"
+        android:focusableInTouchMode="false"
+        />
+    <TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="Discountable amount"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    
+	    />
+     <EditText 
+        android:id="@+id/discountableAmount"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="0"
+        android:editable="false"
+        android:focusableInTouchMode="false"
+        />
+      <TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="Discount type"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    
+	    />
+     <RadioGroup
+        android:id="@+id/radiotype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+ 
+        <RadioButton
+            android:id="@+id/radioRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%Rate" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount" />
+ 
+    </RadioGroup>
+     <EditText 
+         android:id="@+id/txtValue"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:text="0"
+         android:inputType="number"
+         />
+     <LinearLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:orientation="horizontal"
+         >
+         <Button 
+             android:id="@+id/discountdone"
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Done"
+             />
+         <Button 
+             android:id="@+id/discountcancel"
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:text="Cancel"
+             />
+     </LinearLayout>
+</LinearLayout>

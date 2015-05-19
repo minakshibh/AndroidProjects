@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+       android:layout_gravity="center"
+       android:padding="40dp"
+        android:layout_centerInParent="true"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Login Form :"
+            android:id="@+id/formtitle"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name :" 
+       	android:id="@+id/txtUserName"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/userName"
+        android:textSize="15sp"
+       
+        />
+	<EditText 
+	    android:id="@+id/userName"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_centerInParent="true"
+	    android:textSize="15sp"
+	    android:padding="5dp"
+	    android:singleLine="true"
+	    android:background="@drawable/edittext_shape"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operator name :" 
+       	android:id="@+id/txtOperatorName"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="15sp"
+	    
+	    
+	    />
+	<EditText 
+	    android:id="@+id/operatorName"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_centerInParent="true"
+	    android:textSize="15sp"
+	    android:padding="5dp"
+	    android:text="Administrator"
+	    android:editable="false"
+	    android:singleLine="true"
+	    android:visibility="gone"
+	    android:background="@drawable/edittext_shape"
+	    />
+	
+	
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="Password :"
+	    android:id="@+id/txtPassword"
+	      android:textSize="15sp"
+	      android:layout_marginTop="10dp"
+	    />
+	<EditText 
+	    android:id="@+id/password"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:inputType="textPassword"
+	   android:layout_marginTop="5dp"
+	   android:singleLine="true"
+	   android:textSize="15sp"
+	   android:padding="5dp"
+	   android:background="@drawable/edittext_shape"
+	    />
+	
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    >
+	   <Button 
+	       android:id="@+id/login"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:text="Login"
+	       android:gravity="center"
+	       android:padding="10dp"
+	       android:background="@drawable/button_shape"
+	       /> 
+	    <Button 
+	        android:id="@+id/cancel"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:layout_marginLeft="20dp"
+	        android:text="Cancel"
+	        android:gravity="center"
+	        android:visibility="gone"
+	         android:padding="10dp"
+	        android:background="@drawable/button_shape"
+	        />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    android:visibility="gone"
+	    android:id="@+id/logoutLayout"
+	    >
+	  
+	    <Button 
+	        android:id="@+id/loginwithotheruser"
+	       android:layout_height="wrap_content"
+	       android:layout_width="match_parent"
+	       android:layout_weight="1"
+	       
+	        android:text="Sign in as different user"
+	        android:gravity="center"
+	       
+	         android:padding="10dp"
+	        android:background="@drawable/button_shape"
+	        />
+	</LinearLayout>
+	</LinearLayout>
+
+</ScrollView>

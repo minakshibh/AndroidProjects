@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+  android:background="@drawable/app_bg"
+   >
+
+    
+    
+    
+	 <RelativeLayout 
+	     android:layout_height="wrap_content"
+	     android:layout_width="fill_parent"
+	     android:paddingLeft="5dp"
+	     android:paddingRight="5dp"
+	     android:paddingTop="10dp"
+	     android:paddingBottom="10dp"
+	     android:id="@+id/header"
+	     android:background="@drawable/header_bg"
+	     >
+		<ImageButton 
+		    android:id="@+id/back"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:padding="5dp"
+		    android:background="@drawable/back_btn"
+		    />
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="Album Name"
+		    android:id="@+id/albumName"
+		    android:textColor="@color/white"
+		    android:textSize="17sp"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/back"
+		    />
+		    	
+		<ImageView 
+		    android:id="@+id/btnAdd"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerInParent="true"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/add_btn"
+		    />
+		
+		<ImageView 
+		    android:id="@+id/btnEdit"
+		    android:layout_width="wrap_content"
+		    android:layout_marginRight="1dp"
+		    android:layout_toLeftOf="@+id/btnAdd"
+		    android:layout_centerInParent="true"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/edit_icon"
+		    />
+		
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         android:background="@drawable/list_bg"
+         android:layout_below="@+id/header"
+         android:layout_margin="5dp"
+         
+         
+         
+        >
+    <ListView 
+        android:id="@+id/listSong"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+       
+       android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+         android:listSelector="@drawable/list_item_selector"
+        
+        ></ListView>
+    
+    </RelativeLayout>
+   
+    
+</RelativeLayout>

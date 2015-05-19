@@ -1,0 +1,39 @@
+<data>
+	<cities>
+		<city>
+			<cityId>1</cityId>
+			<cityName>Berlen</cityName>
+			<cityImageUrl>http://www.raileurope.co.uk/Portals/0/images/DestinationContent/Scandinavia/destinations/mainimage/bergen3.jpg</cityImageUrl>
+		</city>
+ 	<city>
+			<cityId>2</cityId>
+			<cityName>Kristiansand</cityName>
+			<cityImageUrl>http://www.visitnorway.com/ImageVaultFiles/id_1061/cf_13/Kristiansand-Ulvoysund-Norway-740.JPG</cityImageUrl>
+		</city>
+	        <city>
+			<cityId>3</cityId>
+			<cityName>Oslo</cityName>
+			<cityImageUrl>http://use-it.unginfo.oslo.no/WP/images/day/oslo.jpg</cityImageUrl>
+		</city>
+	        <city>
+			<cityId>4</cityId>
+			<cityName>Sandnes</cityName>
+			<cityImageUrl>http://theforeigner.no/images/pages/2009/09/29/SandnesSparebank-large.jpg</cityImageUrl>
+		</city>
+		<city>
+			<cityId>5</cityId>
+			<cityName>Stavanger</cityName>
+			<cityImageUrl>http://w0.fast-meteo.com/system/images/9451/large/Stavanger.jpg</cityImageUrl>
+		</city>
+		
+		<city>
+			<cityId>8</cityId>
+			<cityName>Patiala</cityName>
+			<cityImageUrl>http://www.trondheim.no/multimedia/9652293/Brygger_5802.jpg</cityImageUrl>
+		</city>
+		
+	</cities>
+	<LastUpdatedCities>1</LastUpdatedCities>
+	<Result>1</Result>
+	<Message>Success</Message>
+</data>

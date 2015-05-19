@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:mads="http://schemas.android.com/apk/lib/com.MadsAdView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background"
+    >
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/header"
+        android:padding="5dp"
+        >
+        <TextView 
+          	android:layout_height="wrap_content"
+          	android:layout_width="fill_parent"
+            android:gravity="center"
+            android:text="Events"
+            android:textStyle="bold"
+		     android:layout_centerVertical="true"
+		     android:textSize="25sp"
+        	android:textColor="@android:color/white"
+            />
+        <ImageButton 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/back_button_selector"
+            android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+            
+            />
+        <ImageButton 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+           	android:id="@+id/addEvent"
+            android:background="@drawable/add_event_selector"
+		   	android:layout_alignParentRight="true"
+        	
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:orientation="horizontal"
+	    >
+        <Button 
+	        android:id="@+id/upcomingEvent"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_base"
+            android:textSize="15sp"
+            
+            android:textStyle="bold"
+            android:background="@drawable/tab_button_hover"
+            android:text="Upcoming"
+	        />
+	    <Button 
+	        android:id="@+id/pastEvent"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_base"
+            android:textSize="15sp"
+            
+            android:textStyle="bold"
+            android:background="@drawable/tab_button"
+            android:text="Past"
+	        />
+	    <Button 
+	        android:id="@+id/nearestEvent"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_base"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/tab_button"
+            android:text="Nearest"
+	        />
+	    
+	</LinearLayout>
+	
+    <ListView 
+         android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+      	android:scrollbars="none"
+  	 	 android:scrollingCache="false"
+        android:id="@+id/eventlisting"
+        android:cacheColorHint="#e5ffffff"
+        
+       android:listSelector="@drawable/list_item_selector"
+     
+        >
+        
+    </ListView>
+     
+    
+</LinearLayout>
+<!-- <FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:layout_gravity="bottom"
+       android:layout_alignParentBottom="true"
+        >
+   	<com.MadsAdView.MadsInlineAdView
+                android:id="@+id/mads_inline_adview"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	mads:showAdOnAttach="true"
+            	mads:placementId="4430687168"
+            	mads:customParameters="current_category=Araç Kiralama"/>
+   
+   	</FrameLayout>
+ -->
+
+
+</RelativeLayout>

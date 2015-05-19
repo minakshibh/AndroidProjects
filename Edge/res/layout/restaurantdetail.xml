@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mads="http://schemas.android.com/apk/lib/com.MadsAdView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rdlayout"
+    android:background="@drawable/background">
+    
+    <include 
+        layout="@layout/header"
+        android:id="@+id/includeheader"/>
+
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollview"
+    android:scrollbars="none"
+  
+  	
+    android:layout_below="@+id/includeheader">   
+    
+    
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:paddingBottom="20dip"
+    android:layout_marginTop="10dip">
+    
+ <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/restinfosection"   
+    android:layout_marginTop="10dip"
+    android:padding="20dip"
+    android:background="@layout/transparent_bg"
+    android:visibility="visible">
+    
+    
+    <ImageView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="150dip"
+    	 android:id="@+id/restaurantimage"    	 
+    	 android:adjustViewBounds="true"    	
+    	 android:layout_marginBottom="10dip"         
+         android:background="@drawable/image_bg"/>
+    
+    <TextView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/restinfo"
+    	 android:layout_below="@+id/restaurantimage"
+    	 android:minLines="1"
+    	 android:maxLines="3"    	 
+    	 android:layout_marginBottom="10dip"
+    	 android:clickable="true"
+    	 android:textStyle="bold"
+    	 android:text="This is testing String......."/>
+    
+    <Button 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/readmore"
+    	 android:layout_below="@+id/restinfo"
+    	 android:text="Read more"
+    	 android:textColor="@color/white"
+    	 android:background="@drawable/readinfo" 
+		 android:layout_marginBottom="10dip" 	 
+    	 android:clickable="true" />
+    
+    </RelativeLayout>
+    
+    
+    <!-- <fragment 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="300dip"
+          android:layout_below="@+id/readmore" 
+          android:scrollingCache="false" 		              
+          android:name="com.google.android.gms.maps.SupportMapFragment"/> -->
+          
+          <RelativeLayout 
+              android:layout_width="fill_parent"
+    	 	  android:layout_height="wrap_content"
+    	 	  android:id="@+id/map"
+    	 	  android:background="@layout/transparent_bg"
+    	 	  android:layout_below="@+id/restinfosection"
+    	 	  android:layout_marginTop="10dip"
+    	 	  android:visibility="visible"
+              android:padding="10dip">
+              
+               <TextView
+                   android:id="@+id/address"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"                                 
+                   android:maxLines="10"
+                   android:text="Address :"
+                   android:textStyle="bold"
+                   android:textColor="@color/app_base" />
+               
+               <ImageView 
+			         android:layout_width="wrap_content"
+			    	 android:layout_height="wrap_content"
+			    	 android:id="@+id/mapIcon"			    	 
+			    	 android:adjustViewBounds="true"
+			    	 android:background="@drawable/maphover"
+			         android:layout_alignParentRight="true"
+			         android:layout_centerVertical="true"
+			         android:clickable="true"/>
+               
+                <TextView 
+			         android:layout_width="wrap_content"
+			    	 android:layout_height="wrap_content"
+			    	 android:id="@+id/addresstxt"
+			    	 android:text="Olave Kyrres Gate 39, 5014 Bergen\nTif: 48 30 55 55"
+			    	 android:maxLines="5"
+			    	 android:layout_marginRight="20dip"		    	 
+			    	 android:textColor="@color/black"	
+			    	 android:textStyle="bold"		    	 
+			    	 android:layout_alignParentLeft="true"
+			    	 android:layout_toLeftOf="@+id/mapIcon"
+			    	 android:layout_below="@+id/address"/>
+              
+              </RelativeLayout>
+    
+    <!--  android:name="com.google.android.gms.maps.MapFragment" -->
+    
+    <!--   <TextView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/getdirections"
+    	 android:layout_below="@+id/map"
+    	 android:text="Get Directions"
+    	 android:layout_margin="5dip"
+    	 android:clickable="true"
+    	 android:gravity="right"/> -->
+    	 
+    	 <RelativeLayout 
+              android:layout_width="fill_parent"
+    	 	  android:layout_height="wrap_content"
+    	 	  android:id="@+id/ratingsection"
+    	 	  android:background="@layout/transparent_bg"
+    	 	  android:layout_below="@+id/map"
+    	 	  android:layout_marginTop="10dip" >
+                
+    	<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                  
+            android:id="@+id/ratingtxt"
+            android:textSize="15sp"
+            android:text="Rating :"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textColor="@color/app_base"            
+            />
+      
+      	<RatingBar
+	        android:id="@+id/ratingBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_below="@+id/ratingtxt"       
+	        android:numStars="5"
+	        android:stepSize="0.5"
+	        style="@style/restRatingBar"	       
+	        />
+      
+      
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:id="@+id/rateit"            
+            android:layout_below="@+id/ratingBar"
+            android:textSize="15sp"
+            android:text="Give Your Rating"
+            android:clickable="true"
+            android:textColor="@color/app_base"            
+            android:textStyle="bold"/>
+       
+       <ImageView 
+			         android:layout_width="wrap_content"
+			    	 android:layout_height="wrap_content"
+			    	 android:id="@+id/shareonfb"			    	 
+			    	 android:adjustViewBounds="true"
+			    	 android:src="@drawable/facebook_icon"
+			         android:layout_alignParentRight="true"
+			         android:layout_centerVertical="true"
+			         android:clickable="true"/>
+       
+       </RelativeLayout>
+       
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingsection"            
+            android:id="@+id/commentsView"            
+            android:layout_marginTop="10dip"            
+            android:orientation="vertical" >
+               
+        </LinearLayout>
+        
+       
+       <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentsView"            
+            android:id="@+id/readmorecomment"                       
+            android:clickable="true"
+            android:textColor="@color/white"
+    	    android:background="@drawable/outer" 
+            android:text="Read all comments" 
+            android:layout_marginTop="5dip"
+            android:padding="10dip"/>
+               
+        
+      
+      <!--  <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rateit"            
+            android:id="@+id/commentsView"
+            android:layout_marginLeft="10dp">
+    
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:id="@+id/name"
+            android:text="Name"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:id="@+id/time"
+            android:layout_alignParentRight="true"
+            android:text="1:12 pm"
+            android:textSize="15sp"
+            android:layout_margin="5dip"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+     
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"          
+            android:id="@+id/comments"
+            android:layout_below="@+id/time"            
+            android:text=""
+             android:textColor="@color/white"/>
+     
+     </RelativeLayout> -->
+     
+      <RelativeLayout 
+              android:layout_width="fill_parent"
+    	 	  android:layout_height="wrap_content"
+    	 	  android:id="@+id/commentsection"    	 	  
+    	 	  android:background="@layout/transparent_bg"
+    	 	  android:layout_below="@+id/readmorecomment"
+    	 	  android:layout_marginTop="10dip"
+              android:padding="10dip">
+     
+       
+       <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"          
+            android:id="@+id/txtcomments"                     
+            android:hint="Add a comment..."
+            android:focusable="true"
+            android:background="@drawable/textarea_bg"
+            android:gravity="left"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#*%$^\n,:;?-() "             
+            android:padding="10dip"
+            android:minLines="5"/>
+       
+       <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"          
+            android:id="@+id/postcomments"
+            android:text="Post comment" 
+            android:textColor="@color/white"
+    	    android:background="@drawable/readinfo"            
+            android:layout_below="@+id/txtcomments"            
+            android:layout_marginTop="10dip"/>
+       
+       <Button 
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"          
+            android:id="@+id/Showevents"
+            android:text="Show Event" 
+            android:textColor="@color/white"
+    	    android:background="@drawable/readinfo"            
+            android:layout_below="@+id/postcomments"            
+            android:layout_marginTop="10dip"
+           
+           />
+<!--        <include  -->
+<!--            android:layout_marginTop="10dp" -->
+<!--            android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content"                  -->
+<!--             android:layout_below="@+id/Showevents"  -->
+<!--             layout="@layout/footerhelp" -->
+           
+<!--            /> -->
+      </RelativeLayout>
+		
+      
+   	
+   	
+</RelativeLayout>
+   
+</ScrollView>
+
+<!--  <FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:id="@+id/flayout"
+       android:layout_alignParentBottom="true"
+       
+        >
+   	<com.MadsAdView.MadsInlineAdView
+        android:id="@+id/mads_interstitial_adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        mads:placementId="0345893057"
+        mads:showAdOnAttach="true" />
+   	</FrameLayout>  -->
+
+</RelativeLayout>

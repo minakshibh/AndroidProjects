@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background"
+    
+    >
+    
+
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:background="@drawable/header"
+        android:padding="10dp"
+        >
+		    <TextView 
+		        android:id="@+id/cityHeader"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:gravity="center"
+		        android:text="Edge"
+		       android:textStyle="bold"
+		       android:singleLine="true"
+		       android:textSize="25sp"
+        	android:textColor="@android:color/white"
+        />
+		   <Button android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:id="@+id/btnBack"
+		       android:textColor="#ffffff"
+		       android:background="@drawable/back_button_selector"
+		       android:layout_alignParentLeft="true"
+		       />  
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        
+        >
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+         android:layout_margin="5dip" 
+        android:orientation="vertical"
+        android:background="@layout/transparent_bg"
+        
+        >
+    
+    <TextView 
+        android:id="@+id/txtHelp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/helptext"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+	        android:layout_marginTop="10dp"
+        />
+    <Button 
+        android:id="@+id/sendemail"  
+         android:layout_marginTop="10dp"
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"    	
+    	 android:text="Continue"
+    	 android:textColor="@color/white"
+    	 android:background="@drawable/readinfo" 
+		 android:layout_marginBottom="10dip" 	 
+    	 android:clickable="true"
+        
+        />
+    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

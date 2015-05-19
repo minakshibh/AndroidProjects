@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Select voucher type..."
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:background="@color/app_base"
+            android:textStyle="bold" />
+   	    
+        <ListView 
+            android:id="@+id/voucherList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeader"
+            android:layout_above="@+id/btnLayout"
+            
+            ></ListView>
+        
+   	      <LinearLayout 
+   	        android:layout_width="fill_parent"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnLayout"
+   	        android:padding="4dp"
+   	        android:layout_alignParentBottom="true"
+   	        android:orientation="horizontal">
+   	    
+   	        <Button 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:text="OK"
+   	            android:textColor="@color/white"
+   	            android:textSize="19sp"
+   	            android:id="@+id/btnOk"
+   	            android:background="@drawable/button_shape"/>
+   	        
+   	        <Button 
+   	            android:layout_width="0dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:layout_marginLeft="5dp"
+   	            android:text="Cancel"
+   	            android:textColor="@color/white"
+   	            android:textSize="19sp"
+   	             android:id="@+id/btnCancel"
+   	            android:background="@drawable/button_shape"/>
+   	        
+   	    </LinearLayout>
+</RelativeLayout>

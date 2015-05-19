@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    
+     >
+  
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/header_bg"
+        android:id="@+id/header"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        >
+        <ImageButton 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_btn_selector"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:id="@+id/albumName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Zoom Karaoke"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/zoom"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/zoom_big"
+        />
+	<TextView 
+	    android:id="@+id/songName"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	     android:layout_gravity="center_horizontal"
+	     android:layout_marginLeft="10dp"
+	     android:layout_marginRight="10dp"
+	    android:text="Zoom Karoke Magic Moments"
+	    android:textSize="15sp"
+	    android:textStyle="bold"
+	    />
+	
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_margin="5dp"
+	   android:id="@+id/playerbackground"
+	   android:padding="5dp"
+	    android:background="@drawable/player_bg"
+	    >
+	<VideoView 
+	    android:id="@+id/video"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:layout_centerInParent="true"
+	   android:layout_margin="5dp"
+	    />
+	<!-- <LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	   
+	   android:layout_below="@+id/video"
+	   android:id="@+id/control"
+	    android:orientation="horizontal"
+	    android:background="@drawable/player_options"
+	    >
+	    
+	    <Button 
+	        android:id="@+id/backward"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       android:layout_weight="1"
+	        android:background="@drawable/backward_button_selector"
+	        />
+	     <Button 
+	        android:id="@+id/pause"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	       android:layout_weight="1"
+	        android:background="@drawable/pause_button_selector"
+	        />
+	     <Button 
+	        android:id="@+id/reload"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/reload_button_selector"
+	        />
+	     <Button 
+	        android:id="@+id/forward"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	      android:layout_weight="1"
+	        android:background="@drawable/forward_button_selector"
+	        />
+	</LinearLayout> -->
+	</RelativeLayout>
+	
+	
+	
+</LinearLayout>

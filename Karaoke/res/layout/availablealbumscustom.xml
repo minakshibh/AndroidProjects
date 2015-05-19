@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+  
+     >
+     
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_height="@dimen/song_thumbnail"
+        android:layout_width="@dimen/song_thumbnail"
+        android:src="@drawable/stub"
+        android:layout_alignParentLeft="true"
+        />
+   
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        
+        android:layout_toRightOf="@+id/image"
+        android:layout_toLeftOf="@+id/buyNow"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        >
+         <TextView 
+		        android:id="@+id/albumName"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="@string/song_name"
+		       
+		        android:textColor="@android:color/white"
+		        android:textSize="17sp"
+		      
+		         android:singleLine="true"
+		        />
+		    <TextView 
+		        android:id="@+id/artistName"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="Artist Name"
+		        android:textSize="13sp"
+		        android:layout_marginTop="2dp"
+		         android:textColor="@android:color/white"
+		        />
+		   <TextView 
+		       android:id="@+id/songcount"
+		       android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="Song 15"
+		        android:layout_marginTop="2dp"
+		        android:textSize="13sp"
+		         android:textColor="@color/green"
+		       />
+		   <TextView 
+		        android:id="@+id/releaseDate"
+		       android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="2014"
+		        android:visibility="gone"
+		         android:textColor="@android:color/white"
+		       
+		       
+		       />
+		   <TextView 
+		        android:id="@+id/songNo"
+		       android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		       
+		        android:visibility="gone"
+		         android:textColor="@android:color/white"
+		       
+		       
+		       />
+		    <TextView 
+		        android:id="@+id/albumId"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:visibility="gone"
+		        
+		        />
+				   <TextView 
+			    android:id="@+id/songLabel"
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:text="Songs"
+			    android:gravity="center"
+			    android:textColor="@color/white"
+			     android:textSize="17sp"
+			    android:visibility="gone"
+			    />
+				  
+	</LinearLayout>
+	
+	<TextView 
+        android:id="@+id/price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:text="Price"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+       
+        android:textColor="@color/white"
+        />
+	
+	 <TextView 
+	    android:id="@+id/buyNow"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:background="@drawable/buy_now_selector"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerInParent="true"
+	 	android:layout_below="@+id/price"
+	   
+	    /> 
+    
+</RelativeLayout>

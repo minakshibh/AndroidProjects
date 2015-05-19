@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+      android:background="@drawable/background" 
+     >
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/header"
+         android:padding="5dp"
+        >
+        <TextView 
+            android:id="@+id/addevent"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:text="Add Event"
+            android:textStyle="bold"
+		    android:singleLine="true"
+		    android:textSize="25sp"
+        	android:textColor="@android:color/white"
+            
+            />
+		<ImageButton 
+		    android:id="@+id/back"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/back_button_selector"
+		    />
+		<ImageButton 
+		    android:id="@+id/save"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/ok_btn"
+		  	android:layout_centerVertical="true"
+		    />
+	</RelativeLayout>
+	
+    <ScrollView 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:scrollbars="none"
+   android:id="@+id/scrollview"
+  
+    >
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	  	
+	    >
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_margin="10dp"
+	    android:background="@layout/transparent_bg"
+	    android:orientation="vertical"
+	    android:padding="10dp"
+	  	
+	    >
+		<LinearLayout 
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal"
+		    >
+
+			<Button
+			    android:id="@+id/uploadImage"
+			    android:layout_weight="0.35"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/upload_icon" />
+
+		<EditText
+		    android:id="@+id/eventname"
+		    android:layout_weight="0.65"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    
+		    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#*%$^\n,:;?-() "
+		    android:gravity="left"
+		    android:padding="10dp"
+		     android:background="@drawable/textarea_bg"
+		    android:hint="Enter event name"
+		    android:minLines="5" 
+		    android:maxLines="5"
+		    >
+		    
+		</EditText>
+	    
+	    </LinearLayout>
+
+	    <EditText 
+	        android:id="@+id/eventDescrition"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="10dp"
+	        android:inputType="text"
+	        android:hint="Enter description"
+	       
+            android:background="@drawable/textarea_bg"
+            android:gravity="left"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#*%$^\n,:;?-() "             
+            android:padding="10dip"
+            android:minLines="5"
+	       android:maxLines="5"
+	       
+	        />
+		
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@layout/transparent_bg"
+        android:orientation="vertical"
+        >
+        <Spinner 
+            android:id="@+id/selectcity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+          
+         android:background="@drawable/dropdown"
+           
+            />
+        <EditText 
+            android:id="@+id/otherCity"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:hint="Other City"
+            android:gravity="top"
+            android:padding="10dip"
+             android:minLines="1"
+             android:maxLines="1"
+              android:background="@drawable/text_bg"
+           
+            
+            />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@layout/transparent_bg"
+        android:orientation="vertical"
+        >
+        <Spinner 
+            android:id="@+id/selectvenue"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_width="match_parent"
+            
+              android:background="@drawable/dropdown"
+            />
+        <EditText 
+            android:id="@+id/otherVenue"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:hint="Other venue"
+            android:gravity="top"
+            android:padding="10dip"
+             android:minLines="1"
+             android:maxLines="1"
+          android:background="@drawable/text_bg"
+            
+            />
+        
+    </LinearLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@layout/transparent_bg"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Start Time"
+            android:id="@+id/txtstart"
+            android:layout_centerHorizontal="true"
+           android:textStyle="bold"
+           android:layout_marginBottom="10dip"
+            />
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtstart"
+            >
+            <RelativeLayout 
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                >
+                <TextView 
+                    android:id="@+id/timestart"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                   
+                    android:hint="Time"
+                    />
+                <ImageView 
+                    android:id="@+id/timepicker"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/clock_icon"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    />
+                
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                 android:background="@android:color/white"
+                android:padding="10dp"
+                android:layout_marginLeft="2dip"
+                >
+                <TextView 
+                    android:id="@+id/datestat"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="Date"
+                    
+                    />
+                <ImageView 
+                    android:id="@+id/datepicker"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/date_icon"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    />
+                
+            </RelativeLayout>
+            
+            
+        </LinearLayout>
+       </RelativeLayout>
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@layout/transparent_bg"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event End Time"
+            android:id="@+id/txtend"
+            android:layout_centerHorizontal="true"
+           android:textStyle="bold"
+           android:layout_marginBottom="10dip"
+            />
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+           
+            android:layout_below="@+id/txtend"
+            >
+            <RelativeLayout 
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                >
+                <TextView 
+                    android:id="@+id/timeend"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="Time"
+                    
+                    />
+                <ImageView 
+                    android:id="@+id/timepickerend"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/clock_icon"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    />
+                
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                 android:background="@android:color/white"
+                android:padding="10dp"
+                android:layout_marginLeft="2dip"
+                >
+                <TextView 
+                    android:id="@+id/datend"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="Date"
+                    
+                    />
+                <ImageView 
+                    android:id="@+id/datepickerend"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/date_icon"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    />
+                
+            </RelativeLayout>
+            
+            
+        </LinearLayout>
+       </RelativeLayout>
+       </LinearLayout>
+    </ScrollView>
+</LinearLayout>

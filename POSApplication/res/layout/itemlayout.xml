@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#CCE5FF"
+    >
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+          android:background="@color/app_base"
+          android:id="@+id/rlayout"
+        >
+        <TextView 
+	    	android:id="@+id/pname"
+	   		android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"  		 
+		    android:text="Name"
+		  
+		    android:textSize="16sp"
+		    android:textStyle="bold"         
+		    android:padding="5dp"
+	    	/>
+       
+        <TextView 
+            android:id="@+id/delete"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="Delete |"
+            android:layout_toLeftOf="@+id/edit"
+            />
+        
+        <TextView 
+            android:id="@+id/edit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="Edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+        
+    </RelativeLayout>
+     	
+     	
+		    <LinearLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_below="@+id/rlayout"
+		        android:paddingLeft="10dp"
+		        android:paddingTop="5dp"
+		        >
+        		<TextView 
+	    			android:id="@+id/pid"
+	   				android:layout_height="wrap_content"
+		             android:layout_width="wrap_content"
+		             android:text="Product_id"
+		             android:visibility="gone"
+		             android:layout_weight="1"
+		            />
+    	 			<LinearLayout 
+	   			      android:layout_height="wrap_content"
+		              android:layout_width="fill_parent"
+		              android:orientation="horizontal"
+	   			      >
+					<TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:layout_weight="1"
+		                android:textStyle="bold"
+		                android:text="ItemId : "
+		                />
+			         <TextView
+			             android:layout_height="wrap_content"
+			             android:layout_width="wrap_content"
+			             android:layout_weight="2"
+			             android:id="@+id/pItemId"
+			             />
+					</LinearLayout>
+	   				 <LinearLayout 
+	   			      	android:layout_height="wrap_content"
+		                android:layout_width="fill_parent"
+	   			    	android:orientation="horizontal" 
+	   			    	>
+	   			     <TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		              	android:textStyle="bold"
+		                android:text="Tax : "
+		                />
+					<TextView
+		                android:layout_height="wrap_content"
+		                android:layout_width="wrap_content"
+		                android:id="@+id/tax"
+		                android:text="tax"
+		                />
+					</LinearLayout>
+		   			  <LinearLayout 
+		   			      android:layout_height="wrap_content"
+			               android:layout_width="fill_parent"
+			               android:orientation="horizontal"
+		   			       >
+						<TextView
+			               	 android:layout_height="wrap_content"
+			               	 android:layout_width="wrap_content"
+			                 android:textStyle="bold"
+			                 android:text="Discount : "
+		                     />
+				            <TextView
+				               android:layout_height="wrap_content"
+				               android:layout_width="wrap_content"    
+				               android:id="@+id/discount"
+				               android:text="Discount"
+				                />
+						</LinearLayout>
+						<LinearLayout 
+		   			      android:layout_height="wrap_content"
+			               android:layout_width="fill_parent"
+			               android:orientation="horizontal"
+			               android:visibility="gone"
+			               android:id="@+id/mdlayout"
+		   			       >
+						<TextView
+			               	 android:layout_height="wrap_content"
+			               	 android:layout_width="wrap_content"
+			                 android:textStyle="bold"
+			                 android:text="MDiscount : "
+			                 android:textColor="@color/red"
+		                     />
+				            <TextView
+				               android:layout_height="wrap_content"
+				               android:layout_width="wrap_content"    
+				               android:id="@+id/mdiscount"
+				               android:text="MDiscount"
+				               android:textColor="@color/red"
+				                />
+						</LinearLayout>
+		   			  
+		   			  
+		            </LinearLayout>
+		           
+			            <RelativeLayout 
+			                android:layout_height="wrap_content"
+			                android:layout_width="wrap_content"
+			                android:id="@+id/pricelayout"
+			                android:layout_below="@+id/rlayout"
+			                android:layout_marginTop="5dp"
+			                android:layout_marginRight="10dp"
+			                >
+			            <TextView 
+					     	android:id="@+id/labelprice"
+		                	android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+		               		android:layout_alignParentRight="true"
+			             	android:text=""
+			             	android:textSize="16sp"
+			             	android:textStyle="bold"
+			               />
+			             <TextView 
+						     android:id="@+id/pprice"
+						     android:layout_toLeftOf="@+id/labelprice"
+			               	 android:layout_width="wrap_content"
+			              	 android:layout_height="wrap_content"
+			               	 
+				             android:text="price"
+				             android:textSize="16sp"
+				             android:textStyle="bold"
+				            />
+	                   </RelativeLayout>
+	                   
+			            
+		               <RelativeLayout 
+		                  android:layout_height="wrap_content"
+			              android:layout_width="wrap_content"
+			              android:layout_below="@+id/pricelayout"
+			             
+			           	   android:layout_marginRight="10dp"
+			              >  
+			              <TextView 
+			                 android:layout_height="wrap_content"
+			               	 android:layout_width="wrap_content"
+			              	 android:layout_toLeftOf="@+id/labelQuntity"
+			             	 android:id="@+id/quantity"
+			              	 android:text="Quantity Left"
+			              	 android:textStyle="bold"
+			                 />
+			              <TextView 
+			   				 android:layout_height="wrap_content"
+				             android:layout_width="wrap_content"
+				             android:id="@+id/labelQuntity"
+				             android:text=" Left"
+				             android:layout_alignParentRight="true"
+				             android:textStyle="bold"
+				            />
+		               </RelativeLayout>
+		               <RelativeLayout 
+		                  android:layout_height="wrap_content"
+			              android:layout_width="wrap_content"
+			              android:layout_alignParentBottom="true"
+			           	   android:layout_marginRight="10dp"
+			           	   android:id="@+id/totalLayout"
+			           	   android:visibility="gone"
+			              >  
+			              <TextView 
+			                 android:layout_height="wrap_content"
+			               	 android:layout_width="wrap_content"
+			              	 android:layout_toLeftOf="@+id/total"
+			             	
+			              	 android:text="Total : "
+			              	 android:textStyle="bold"
+			                 />
+			              <TextView 
+			   				 android:layout_height="wrap_content"
+				             android:layout_width="wrap_content"
+				             android:id="@+id/total"
+				            
+				             android:layout_alignParentRight="true"
+				             android:textStyle="bold"
+				            />
+		               </RelativeLayout>
+	          
+</RelativeLayout>

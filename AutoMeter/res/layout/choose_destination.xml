@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+    	android:padding="8dp"   
+    	android:background="#000000" 
+        >
+        <ImageView 
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop_icon"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/headerText"
+            android:src="@drawable/influx_logo"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+    
+    <fragment
+	    android:name="com.google.android.gms.maps.SupportMapFragment"
+	    android:id="@+id/mapView"
+	    android:layout_below="@+id/header"
+	    android:layout_above="@+id/footer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+        android:background="@layout/destination_picker_bg"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        >
+        
+        <AutoCompleteTextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:id="@+id/destination"
+            android:hint="Where do you want to go?"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@drawable/search"/>
+	</RelativeLayout>
+
+   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/header"
+        android:layout_margin="2dp"
+        android:background="@drawable/small_logo" />
+        
+</RelativeLayout>

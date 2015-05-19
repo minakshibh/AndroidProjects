@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"	
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+    	android:padding="5dp"   
+    	android:background="#000000" 
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/headerText"
+            android:text="Auto Meter"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+    
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="19sp"
+    android:id="@+id/txtMessage"
+    android:textColor="#000000"
+    android:text="Do you want to manually specify your starting location?"
+    />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    >
+    <Button 
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:layout_weight="1"
+    android:padding="10dp"
+    android:textSize="16sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:text="Use my current location"
+    android:id="@+id/useExisting"
+    />
+    <Button 
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="1dp"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:textSize="16sp"
+    android:textColor="#ffffff"
+    android:background="#000000"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:text="Continue"
+    android:id="@+id/btnContinue"
+    />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Edge</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help">Hjelp oss å bli bedre!</string>
+    <string name="EmailreceiptId">nightlife.application@gmail.com</string>
+    <string name="EmailSubject">Suggestion/Error report</string>
+<!-- 	<string name="app_url">http://208.109.205.16:321/utiLiveWebAccess.asmx</string> -->
+<!-- 	<string name="liveeventurl">http://208.109.205.16:321/UtiLiveWebAccess.asmx</string> -->
+<!-- 	<string name="eventurl">http://112.196.24.205:501/UtiLiveWebAccess.asmx</string> Local service -->
+	
+	
+	<string name="app_url">http://112.196.24.205:501/UtiLiveWebAccess.asmx</string>
+	
+	
+	
+	<!-- <string name="helptext">Hjelp oss å bli bedre! \nVet du om noen steder som ikke er ført opp her, eller har du informasjon om endringer vi burde oppdatere? Skriv det inn i feltet nedenfor, og vi vil oppdatere app´en så fort som mulig!\n\nVi setter pris på alle tilbakemeldinger.\n\nMvh,\nUteliv -->
+	    
+<!-- 	<string name="helptext">Hjelp oss å bli bedre!\nVet du om noen steder som ikke er oppført her, eller har informasjon om de endringene vi skal oppdatere? Klikk fortsetter fra alternativ nedenfor for å sende oss en mail og vi vil oppdatere programmet så snart som mulig!\n\nVi setter pris på alle tilbakemeldinger.\n\nMvh,\nUteliv</string> -->
+	<string name="helptext">Hjelp oss å bli bedre!\nVet du om noen steder som ikke har kommet med? Eller har du informasjon om endringer vi burde oppdatere?\n\nSend oss en mail og vi vil oppdatere Uteliv så fort som mulig!\n\nVi setter pris på absolut alle tilbakemeldinger.\n\nMvh,\nEDGE</string>
+		
+	<!-- http://112.196.24.205:111/utilivewebaccess.asmx -->
+	<!--http://112.196.24.205:321/utilivewebaccess.asmx-->
+	<!-- http://208.109.205.16:321/utiLiveWebAccess.asmx -->
+   <!--  <string name="inlineId">0345893057</string> -->
+  <!--  <string name="interstatial">9345913059</string> --> 
+</resources>

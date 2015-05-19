@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+  android:background="@drawable/app_bg"
+   >
+
+    
+    
+    
+	 <RelativeLayout 
+	     android:layout_height="wrap_content"
+	     android:layout_width="fill_parent"
+	     android:paddingLeft="5dp"
+	     android:paddingRight="5dp"
+	     android:paddingTop="10dp"
+	     android:paddingBottom="10dp"
+	     android:id="@+id/header"
+	     android:background="@drawable/header_bg"
+	     >
+		<ImageButton 
+		    android:id="@+id/back"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:padding="5dp"
+		    android:background="@drawable/back_btn_selector"
+		    />
+		<ImageView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:id="@+id/zoom"
+		    android:background="@drawable/zoom_img"
+		    android:layout_centerInParent="true"
+		    />
+		<ImageButton 
+	        android:id="@+id/addBtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/add_icon_selector"
+	        />
+		
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mysongs"
+        android:layout_below="@+id/header"
+        android:layout_margin="5dp"
+        >
+        <Button 
+            android:id="@+id/songs"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Songs"
+            android:background="@drawable/tw3_left"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+         <Button 
+            android:id="@+id/albums"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Albums"
+            android:background="@drawable/tb3_center"
+            android:textColor="@color/white"
+             android:gravity="center"
+             android:textStyle="bold"
+            />
+         <Button 
+	        android:id="@+id/playList"
+	        android:text="Playlist"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textStyle="bold"
+	         android:textColor="@color/white"
+	        android:background="@drawable/tb3_right"
+	        />
+	    
+        
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+     	 android:layout_marginBottom="10dp"
+         android:layout_below="@+id/mysongs"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+           android:background="@drawable/list_bg"
+           android:paddingBottom="5dp"
+        >
+
+    <ListView
+        android:id="@+id/listSong"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/inviteFb"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/list_item_selector" >
+</ListView>
+
+    <TextView 
+        android:layout_height="0.5dp"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/inviteFb"
+        android:background="@android:color/darker_gray"
+        />
+    <ImageButton 
+        android:id="@+id/inviteFb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/fb_invite"
+        android:layout_margin="5dp"
+        />
+    </RelativeLayout>
+    
+</RelativeLayout>

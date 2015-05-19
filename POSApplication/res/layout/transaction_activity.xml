@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    
+     <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/app_base"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Transaction"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:id="@+id/title"
+      
+       
+        />
+       
+        <ImageButton 
+        android:id="@+id/menu"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/menu"
+        />
+         
+        <Button 
+        android:id="@+id/addItem"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/button_shape"
+        android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+        android:text="Add Item"
+       android:textStyle="bold"
+        /> 
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/txtPDetail"
+        android:layout_below="@+id/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Product Detail"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_base"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+
+	<ListView 
+	    android:id="@+id/listItem"
+	    android:layout_marginTop="3dp"
+	    android:layout_below="@+id/txtPDetail"
+	    android:layout_above="@+id/bottomLayout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    
+	    />
+	
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:id="@+id/bottomLayout"
+	    android:orientation="vertical"
+	     android:layout_alignParentBottom="true"
+	    >
+         <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dp"
+	         android:layout_marginRight="10dp"
+	        android:visibility="gone"
+	        >
+	        <EditText 
+	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:hint="Enter voucher number"
+	            android:id="@+id/voucherText"
+	            android:layout_weight="0.6"
+	            />
+	         <Button 
+	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:layout_marginTop="5dp"
+	            android:text="Apply Voucher"
+	            android:layout_weight="0.4"
+	           android:background="@drawable/button_shape"
+	            android:id="@+id/btnVoucher"
+	            android:textSize="17sp"
+	     
+	      		android:layout_marginLeft="5dp"
+	            />
+	        
+	    </LinearLayout>
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	   
+	    android:orientation="horizontal"
+	    
+	    >
+	   
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight=".3"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="10dp"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Total "
+	            android:textStyle="bold"
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="Total Due"
+	            android:textStyle="bold"
+	            android:id="@+id/dueTotal"
+	            />
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight=".7"
+	        android:orientation="vertical"
+	        
+	        >
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	         
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="SubTotal "
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            
+	            android:id="@+id/subTotal"
+	            />
+	        
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	         
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Discount "
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	           
+	            android:id="@+id/discountTotal"
+	            />
+	        
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	      
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="VAT "
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            
+	            android:id="@+id/vatTotal"
+	            />
+	        
+	    </LinearLayout>
+	     <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	      
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="M-Discount "
+	            android:textColor="@color/red"
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	             android:textColor="@color/red"
+	            android:id="@+id/mDiscount"
+	            />
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	         android:visibility="gone"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Tendered Amount"
+	            />
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            
+	            android:text="tender amount "
+	            android:id="@+id/tenderedTotal"
+	            />
+	        
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	         android:id="@+id/voucherLayout"
+	        android:orientation="horizontal"
+	       
+	        >
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Voucher Id "
+	            />
+	         
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:id="@+id/txtVoucherId"
+	            />
+	         <ImageButton 
+	            android:layout_height="20dp"
+	            android:layout_width="20dp"
+	          	android:background="@drawable/remove_icon"
+	            android:id="@+id/cancelVoucher"
+	            android:layout_marginLeft="10dp"
+	            />
+	        
+	    </LinearLayout>
+	     <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	         android:id="@+id/voucherLayout1"
+	        android:orientation="horizontal"
+	       
+	        >
+	         <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="Voucher Amount "
+	            />
+	         
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:id="@+id/txtVoucherAmount"
+	            />
+	        
+	    </LinearLayout>
+	      
+	     
+	    </LinearLayout>
+	   
+	    
+	</LinearLayout>
+	<LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	         android:id="@+id/discountLayout"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        >
+	        <Button 
+	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:text="Apply Transaction Discount"
+	            android:id="@+id/discountbtn"
+	            android:background="@drawable/button_shape"
+	      		android:textColor="@color/white"
+	            />
+	        <TextView 
+	            android:id="@+id/discountType"
+	            android:layout_height="wrap_content"
+	             android:layout_width="0dp"
+	            android:layout_weight="0.5"
+	            
+	            />
+	        <TextView 
+	            android:layout_height="wrap_content"
+	             android:layout_width="0dp"
+	            android:layout_weight="0.5"
+	            android:layout_marginLeft="10dp"
+	            android:id="@+id/txtDiscountValue"
+	            />
+	        
+	    </LinearLayout>
+	<LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        >
+	    
+	    <Button 
+	        android:id="@+id/paycash"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="Pay Cash"
+	        android:layout_weight="0.8"
+	      	android:background="@drawable/button_shape"
+	      	android:textColor="@color/white"
+	      	android:textSize="17sp"
+	      	
+	        />
+	    
+	     <Button 
+	        android:id="@+id/paybycard"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="Pay Card"
+	        android:layout_weight="0.8"
+	        android:background="@drawable/button_shape"
+	      	android:textColor="@color/white"
+	      	android:textSize="17sp"
+	      	android:layout_marginLeft="5dp"
+	        />
+	    <Button 
+	        android:id="@+id/paybyvoucher"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:text="Apply Voucher"
+	        android:background="@drawable/button_shape"
+	      	android:textColor="@color/white"
+	      	android:textSize="17sp"
+	     
+	      	android:layout_marginLeft="5dp"
+	        />
+	    </LinearLayout>
+	</LinearLayout>
+	<include 
+	    layout="@layout/menulayout"
+	    android:layout_below="@+id/header"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    />
+</RelativeLayout>

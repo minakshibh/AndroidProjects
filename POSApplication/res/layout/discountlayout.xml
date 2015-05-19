@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/txtTitle"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:textStyle="bold"
+	    android:textSize="14sp"
+	    android:text="Please select Discount"
+	    />
+    <Button 
+        android:id="@+id/ten"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="10 %"
+        />
+    <Button 
+        android:id="@+id/twenty"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="20 %"
+        />
+    <Button 
+        android:id="@+id/fifty"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="50 %"
+        />
+    <Button 
+        android:id="@+id/seventy"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="70 %"
+        />
+    <Button 
+        android:id="@+id/selectManual"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select Discount Manually"
+        />
+    <Button 
+        android:id="@+id/removeMDiscount"
+         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Remove Discount Manually"
+        
+        
+        />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_base">#9B0C08</color>
+    <color name="darkgray">#404040ff</color>
+<color name="black">#000000</color>
+<color name="red">#ff00ff</color>
+<color name="green">#0ff0ff</color>
+<color name="lightgray">#ffcccccc</color>
+<color name="white">#ffffffff</color>
+<color name="blue1">#ffeee9b6</color>
+<color name="blue">#00ffff</color>
+<color name="gray1">#ff999999</color> 
+<color name="gray">#ff666666</color>
+<color name="bgcolor">#ffffff</color>
+<color name="yellow">#ffffff99</color>
+    
+    
+    
+    
+    
+    <drawable name="list_focused">#e5ffffff</drawable>
+  <drawable name="list_selected">#e5ffffff</drawable>
+</resources>

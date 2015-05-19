@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+  
+     >
+
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/app_base"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Transaction"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:id="@+id/title"
+        />
+       
+        <ImageButton 
+        android:id="@+id/menu"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/menu"
+        />
+         
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:id="@+id/floatbtnLayout"
+        >
+    
+    <Button 
+        android:id="@+id/floatbtnNaira"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+       
+        android:text="Float Cash ₦ 1000 "
+        />
+    <Button 
+        android:id="@+id/floatbtnEuro"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+     
+        android:text="Float Cash € 1000 "
+        />
+    <Button 
+        android:id="@+id/floatbtnDollar"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        
+        android:text="Float Cash $ 1000 "
+        />
+    </LinearLayout>
+   <ScrollView 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/floatbtnLayout"
+    
+   >
+    
+    <LinearLayout 
+        android:id="@+id/transactionForm"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Float Amount"
+            android:textStyle="bold"
+            
+            />
+        <EditText 
+            android:id="@+id/editFloatAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+             android:editable="false"
+             android:singleLine="true"
+             android:paddingLeft="5dp"
+             android:background="@drawable/edittext_shape"         
+            />
+         <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Total Sale"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+            
+            />
+        <EditText 
+            android:id="@+id/editTotallSale"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+             android:editable="false"  
+             android:singleLine="true"
+             android:paddingLeft="5dp"
+             android:background="@drawable/edittext_shape" 
+            />
+         <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Expected Amount"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText 
+            android:id="@+id/editExpectedAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+             android:editable="false"  
+             android:singleLine="true"
+              android:paddingLeft="5dp" 
+             android:background="@drawable/edittext_shape"        
+            />
+         <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Enter Cash Value"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText 
+            android:id="@+id/editCashValue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+                android:inputType="numberDecimal"  
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:background="@drawable/edittext_shape"      
+            />
+         <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Difference value"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            
+            />
+        <EditText 
+            android:id="@+id/editdifferncevalue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+                  android:editable="false"
+                  android:singleLine="true"
+                  android:paddingLeft="5dp" 
+                  android:inputType="none" 
+                  android:background="@drawable/edittext_shape"    
+            />
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+        
+              <Button 
+            android:id="@+id/declare"
+            android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+            
+            android:text="Declare"
+            android:background="@drawable/button_shape"
+            />
+        
+        </LinearLayout>
+       
+        
+    </LinearLayout>
+    </ScrollView>
+   <include 
+        layout="@layout/menulayout"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />  
+    
+    
+</RelativeLayout>

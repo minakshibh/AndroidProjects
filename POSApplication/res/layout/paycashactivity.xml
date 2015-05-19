@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/app_base"
+       android:id="@+id/header"
+        >
+        <Button 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="Back"
+            android:background="@drawable/button_shape"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Pay via Cash"
+            android:layout_centerInParent="true"
+             android:textSize="24sp"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff"
+	        android:background="@color/app_base"
+	        android:padding="10dp"
+            />
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+         android:layout_below="@+id/header"
+         android:id="@+id/currSelect"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Select currency"
+            />
+    <Spinner 
+        android:id="@+id/spinner"
+       
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/currency_array"
+        android:prompt="@string/currency_prompt"
+        />
+    
+    <TextView 
+        android:id="@+id/origionalValue"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/currSelect"
+        android:id="@+id/layoutTotal"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        
+   	   >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Total"
+            android:id="@+id/labelTotal"
+            android:layout_alignParentLeft="true"
+             android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:layout_weight="1"
+	        android:textColor="@color/app_base"
+            />
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+          	 android:layout_toRightOf="@+id/labelTotal"
+             android:textSize="20sp"
+             android:id="@+id/txtTotal"
+	        android:textStyle="bold"
+	        android:textColor="@color/app_base"
+            />
+         <TextView 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:text="Given"
+   	            android:layout_weight="1"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <EditText 
+   	            android:layout_width="0dp"
+   	            android:layout_marginLeft="4dp"
+   	            android:layout_weight="1"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtGiven"
+   	            android:inputType="numberDecimal"
+   	            android:singleLine="true"
+   	            />
+   	         <TextView 
+   	            android:layout_width="0dp"
+   	            android:layout_height="wrap_content"
+   	            android:text="Change"
+   	            android:layout_weight="1"
+   	            android:textColor="@color/app_base"
+   	            android:textSize="18sp"/>
+   	        
+   	        <EditText 
+   	            android:layout_width="0dp"
+   	            android:layout_height="wrap_content"
+   	            android:id="@+id/txtChange"
+   	            android:layout_weight="1"
+   	            android:layout_marginLeft="4dp"
+   	            android:singleLine="true"
+   	            android:editable="false"
+   	            />
+    </LinearLayout>
+
+   	<CheckBox 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="Enter via Currency List"
+   	    android:textColor="@color/app_base"
+   	    android:textSize="18sp"
+   	    android:layout_below="@+id/layoutTotal"
+   	    android:id="@+id/chkDenomination"
+   	    />
+   	
+   	<ScrollView 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_above="@+id/footer"
+   	    android:padding="5dp"
+   	
+   	    android:layout_below="@+id/chkDenomination"
+   	    >
+   	    <LinearLayout 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="vertical"
+   	        android:layout_gravity="center_horizontal"
+   	       
+   	        android:id="@+id/denominationLayout">
+   	       <!--  
+   	      
+   	        <LinearLayout 
+   	            android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+   	            android:orientation="horizontal"
+   	           android:layout_gravity="center"
+   	           android:gravity="center"
+   	            android:id="@+id/linearLayout"
+   	            
+   	            >
+   	             
+   	            </LinearLayout>   --> 
+   	    </LinearLayout>
+   	</ScrollView>
+   	
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:id="@+id/footer"
+   	    android:padding="5dp"
+   	    android:layout_alignParentBottom="true"
+   	    android:orientation="horizontal"
+   	    >
+   	    <Button 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnDone"
+   	        android:textColor="@color/white"
+   	        android:background="@drawable/button_shape"
+   	        android:text="Done"/>
+   	    
+   	     <Button 
+   	        android:layout_width="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_height="wrap_content"
+   	        android:id="@+id/btnCancel"
+   	        android:layout_marginLeft="10dp"
+   	        android:textColor="@color/white"
+   	        android:background="@drawable/button_shape"   	        
+   	        android:text="Cancel"/>
+   	     
+   	</LinearLayout>
+</RelativeLayout>

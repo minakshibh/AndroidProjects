@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.posapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   
+  
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+       
+        >
+        <activity
+            android:name="com.pos.retail.LoginScreen"
+            android:label="@string/app_name" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+            
+            
+        </activity>
+        <activity android:name="com.pos.retail.FloatCashActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            
+           
+            
+        </activity>
+        
+        <activity android:name="com.pos.retail.TrxSettings" android:configChanges="keyboardHidden|orientation|screenSize" ></activity>
+        <activity android:name="com.pos.retail.Denomination" android:configChanges="keyboardHidden|orientation|screenSize">
+          
+        </activity>
+        
+        <activity android:name="com.pos.retail.TransactionActivity"  android:configChanges="keyboardHidden|orientation|screenSize">
+             
+        </activity>
+        
+        <activity android:name="com.pos.retail.MainActivity"  android:configChanges="keyboardHidden|orientation|screenSize">
+            
+            
+        </activity>
+        <activity android:name="com.pos.retail.AddProducts" android:configChanges="keyboardHidden|orientation|screenSize">
+           
+            
+        </activity>
+        <activity android:name="com.pos.retail.ProductList" android:configChanges="keyboardHidden|orientation|screenSize">
+            
+        </activity>
+        <activity android:name="com.pos.retail.PayCashActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            
+        </activity>
+        <activity android:name="com.pos.retail.ReceiptGenerate"  android:configChanges="keyboardHidden|orientation|screenSize">
+           
+               
+        </activity>
+        <activity android:name="com.print.PrintClass">
+            
+        </activity>
+        <activity android:name="com.pos.retail.KsoapLibrarySample">
+           
+        </activity>
+        <activity android:name="com.pos.retail.PayByVoucher" android:configChanges="keyboardHidden|orientation|screenSize">
+           
+        </activity>
+        <activity android:name="com.pos.retail.PayByCard"  android:configChanges="keyboardHidden|orientation|screenSize">
+            
+        </activity>
+        
+        <activity android:name="com.pos.retail.UpdateReceipt" android:configChanges="keyboardHidden|orientation|screenSize">
+             
+        </activity>
+         <activity android:name="com.pos.retail.ItemReturnsActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            
+           
+        </activity>
+        <activity android:name="com.print.ReceiptTest">
+             
+        </activity>
+        <activity android:name="com.print.DenominatationTest" android:configChanges="keyboardHidden|orientation|screenSize">
+            
+        </activity>
+       
+        <activity android:name="com.pos.retail.ReturnReceiptVoucher" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            
+           
+        </activity>
+        <activity android:name="com.pos.retail.ReturnDetailActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            </activity>
+            
+         <activity android:name="com.pos.retail.GenerateVoucher"  android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+      <activity android:name="com.pos.retail.RetunReceipt" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+         
+         
+      </activity>
+       
+        <activity android:name="com.print.TestReturn" android:configChanges="keyboardHidden|orientation|screenSize">
+             
+        </activity>
+       <activity android:name="com.pos.retail.BreakActivity" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name="com.pos.retail.VoidReceiptLogin" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+       <activity android:name="com.pos.retail.VoucherReceiptGenerate" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+   	
+    	<activity android:name="com.pos.retail.PayPalClass" android:configChanges="keyboardHidden|orientation|screenSize">
+    	    
+    	</activity>   
+       
+    	    
+    	<activity android:name="com.pos.retail.ResultActivity" android:screenOrientation="portrait">
+    	    
+- <intent-filter>
+  <action android:name="android.intent.action.VIEW" /> 
+  <category android:name="android.intent.category.DEFAULT" /> 
+  <category android:name="android.intent.category.BROWSABLE" /> 
+  <data android:host="paymentResult" android:scheme="hailocabtest" /> 
+  </intent-filter>
+  </activity>
+    	
+    <!-- StartIOs Sdk library  -->
+    <activity android:name="com.StarMicronics.StarIOSDK.PrinterTypeActivity"
+                  android:label="@string/app_name" android:enabled="true" android:allowBackup="false"  >
+            <intent-filter>
+                
+                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                
+            </intent-filter>
+             <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+             
+             
+        </activity>
+    	<activity android:name="com.StarMicronics.StarIOSDK.barcodeselector"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.code39Activity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.code93Activity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.ITFActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.code128Activity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.barcodeselector2d"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.QRCodeActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.pdf417Activity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.BarcodePrintingMini"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.QrcodeMiniActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.pdf417miniActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.cutActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.textFormatingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.rasterPrintingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.imagePrintingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.textFormatingMiniActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingMiniActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.helpActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.helpMessage"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.LineModeHelpActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.RasterModeHelpActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.CommandTypeActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.StarIOSDKMobilePrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterLineModeActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.StarIOSDKPOSPrinterRasterModeActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.DKAirCashActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.BluetoothSettingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.BluetoothSettingHelpActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.PINCodeSettingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.StarIOSDKDotPOSPrinterLineModeActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.cutDotPrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.kanjiTextFormatingDotPrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.textFormatingDotPrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.LineModeforImpactDotMatrixHelpActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.simplifiedchineseTextFormatingDotPrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.traditionalchineseTextFormatingDotPrinterActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.SampleReciptActivity"></activity>
+        <activity android:name="com.StarMicronics.StarIOSDK.textFormattingSelectLanguageActivity"></activity>
+    	<activity android:name="com.pos.retail.ChooseTrxOption" android:configChanges="keyboardHidden|orientation|screenSize">
+    	    
+    	   
+    	</activity>
+       </application>
+
+</manifest>

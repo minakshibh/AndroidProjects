@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbackground"
+     >
+     
+    <RelativeLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/splash_header"
+        android:background="@layout/uteliv_header_bg"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:id="@+id/appNameHeader"
+     
+        android:text="Edge"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/footer"
+        android:background="@layout/app_header"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/footertext"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    </RelativeLayout>
+</RelativeLayout>

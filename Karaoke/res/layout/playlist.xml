@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/app_bg"
+    
+    >
+    
+	<RelativeLayout 
+	   android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:background="@android:color/black"
+	    android:padding="10dp"
+	    >
+	    <ImageButton 
+	        android:id="@+id/back"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/back_btn"
+	        />
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerInParent="true"
+	        
+	        android:background="@drawable/zoom_img"
+	        />
+	    <ImageButton 
+	        android:id="@+id/addBtn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/add_icon"
+	        />
+	    
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:orientation="horizontal"
+	    android:padding="10dp"
+	    >
+	    <Button 
+	        android:id="@+id/songs"
+	        android:text="Songs"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:background="@drawable/tb3_left"
+	        android:textColor="@color/white"
+	        />
+	    
+	     <Button 
+	        android:id="@+id/albums"
+	        android:text="Albums"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	         android:textColor="@color/white"
+	        android:background="@drawable/tb3_center"
+	        />
+	    <Button 
+	        android:id="@+id/playList"
+	        android:text="Playlist"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	         android:textColor="@color/black"
+	        android:background="@drawable/tw3_right"
+	        />
+	    
+	    
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/playlist"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="@dimen/margin"
+	    android:layout_marginRight="@dimen/margin"
+	    android:listSelector="@drawable/list_item_selector"
+	    android:dividerHeight="1dp"
+       android:divider="@android:color/white"
+	    android:background="@drawable/list_bg"
+	    ></ListView>
+</LinearLayout>

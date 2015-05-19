@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Auto Meter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- <string name="app_key">AIzaSyA3G3cq3HG7ylU-ahONZCxt34FlHPpAcfE</string> -->
+    
+    <string name="near_by_radius">50000</string>
+	<!-- <string name="places_api_key">AIzaSyDE7csN7W_nVpEwi2-P2pISKbURdO0Jq1s</string> -->
+	
+	<string name="places_api_key">AIzaSyDrjRyAHAT4h6cTU364kOOKrw2F-tmWiD4</string>
+	<string name="repotstr">Report if you are having an unpleasant experience or driver isn\'t plying on meter</string>
+	
+	<string name="chennaiPoliceFbLink">chennaitrafficpolice</string>
+	<string name="toiFbLink">missingmeter</string>
+	
+	<string name="chennaiPoliceTwitterLink">\@cctpolice</string>
+	<string name="toiTwitterLink">\@missingmeter</string>
+	
+	<string name="chennaiPoliceEmail"></string>
+	<string name="toiEmail">missingmeter@indiatimes.com</string>
+	
+	<string name="chennaiPoliceNumber">09840000103</string>
+	<string name="toiNumber">09941532320</string>
+</resources>

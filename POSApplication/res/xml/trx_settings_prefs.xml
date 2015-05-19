@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="TRX Server Settings">
+ 
+		  <EditTextPreference
+		     android:key="username"
+		     android:summary="Enter username"
+		     android:title="UserName" />
+		  <EditTextPreference
+		     android:key="domain"
+		     android:summary="Enter domain name"
+		     android:title="Domain" />
+		  <EditTextPreference
+		     android:key="password"
+		     android:summary="Enter Password"
+		     android:title="Password" />
+		  <EditTextPreference
+		     android:key="localPath"
+		     android:summary="Enter local server path"
+		     android:title="Local Server Path" />
+		  
+		  <EditTextPreference
+		     android:key="remotePath"
+		     android:summary="Enter remote server path"
+		     android:title="Remote Server Path" />
+		  
+</PreferenceScreen>

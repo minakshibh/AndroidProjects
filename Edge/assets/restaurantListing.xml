@@ -1,0 +1,321 @@
+<data>
+<Restaurants>
+	<Restaurant>
+		<id>1</id>
+		<name>1877</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/04/6c/90/34/1877.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Buffet</SubCategory>
+		 <Rating>2</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+	<Restaurant>
+		<id>2</id>
+		<name>Arti Indisk</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/03/f9/2e/35/legg-til-en-bildetekst.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Dining</SubCategory>
+		 <Rating>3</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+	<Restaurant>
+		<id>3</id>
+		<name>Bare Restaurant</name>
+		<imageUrl>http://www.norskebransjemagasinet.no/upl/images/316683_781_429_2_thumb.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>DanceClub</SubCategory>
+		 <Rating>4</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br/>
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+	<Restaurant>
+		<id>4</id>
+		<name>Brazil Churrascaria</name>
+		<imageUrl>http://www.wickinn.com/sites/default/files/styles/full_width_image/public/landing_pages/Pointe%20Restaurant%20Anthony%20Redpath.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Buffet</SubCategory>
+		 <Rating>3</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+	<Restaurant>
+		<id>5</id>
+		<name>Bryggekanten</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/04/6c/90/34/1877.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Dining</SubCategory>
+		 <Rating>2</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+	<Restaurant>
+		<id>6</id>
+		<name>Escal Tapas</name>
+		<imageUrl>http://www.foxrc.com/frcwp/wp-content/uploads/2012/04/zinburger-slide-4.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>DanceClub</SubCategory>
+		 <Rating>5</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</Restaurant>
+</Restaurants>
+<Nightclubs>
+	<NightClub>
+		<id>7</id>
+		<name>Biblioteket Bar</name>
+		<imageUrl>http://www.wickinn.com/sites/default/files/styles/full_width_image/public/landing_pages/Pointe%20Restaurant%20Anthony%20Redpath.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<description><p>Ny Restaurant i Bergen.<br />
+		    <SubCategory>Buffet</SubCategory>
+		     <Rating>1</Rating>
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>8</id>
+		<name>Calibar</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/04/6c/90/34/1877.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Dining</SubCategory>
+		 <Rating>5</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>9</id>
+		<name>Dreams Showbar</name>
+		<imageUrl>http://www.norskebransjemagasinet.no/upl/images/316683_781_429_2_thumb.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Buffet</SubCategory>
+		 <Rating>4</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>10</id>
+		<name>Exodus</name>
+		<imageUrl>http://www.foxrc.com/frcwp/wp-content/uploads/2012/04/zinburger-slide-4.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Buffet</SubCategory>
+		 <Rating>5</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>11</id>
+		<name>Feliz</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/03/f9/2e/35/legg-til-en-bildetekst.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Dining</SubCategory>
+		 <Rating>3</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>12</id>
+		<name>Kaos</name>
+		<imageUrl>http://www.wickinn.com/sites/default/files/styles/full_width_image/public/landing_pages/Pointe%20Restaurant%20Anthony%20Redpath.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>Dining</SubCategory>
+		 <Rating>4</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+	<NightClub>
+		<id>13</id>
+		<name>Luux</name>
+		<imageUrl>http://media-cdn.tripadvisor.com/media/photo-s/04/6c/90/34/1877.jpg</imageUrl>
+		<address>Vetrlidsallmenningen 2, 5014 Bergen Tlf: 99 56 12 25</address>
+		<longitude>5.32382</longitude>
+		<latitude>60.3913</latitude>
+		<SubCategory>DanceClub</SubCategory>
+		 <Rating>3</Rating>
+		<description><p>Ny Restaurant i Bergen.<br />
+Restaurant 1877 er en nyapnet restaurant midt i Bergen. Her tilbyr de en unik<br />
+spiseopplevelse basert pa den fantastiske lokalmaten regionen har a tilby, servert<br />
+i flotte lokaler pa Kjottbasaren i hjertet av Bergen.<br />
+Pa 1877 holdes fokuset pa nye opplevelser, gjestenes oppfatning av maten og<br />
+rammene rundt maltidet.<br />
+Menyen pa 1877 er bygget pa sesongens beste ravarer og kokkenes ekspertise.<br />
+Prisniva:<br />
+3-Retters: 565 kr<br />
+Vinpakke: 295 kr/495 kr<br />
+5-Retters: 695 kr<br />
+Vinpakke: 495 kr/695 kr<br />
+Apningstider:<br />
+Mandag - Lordag: 12:00 - 21:00</p></description>
+	</NightClub>
+</Nightclubs>
+<LastUpdated>1</LastUpdated>
+<Result>1</Result>
+<Message>Success</Message>
+</data>

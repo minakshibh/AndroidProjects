@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:mads="http://schemas.android.com/apk/lib/com.MadsAdView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    
+    <include 
+        layout="@layout/header"
+        android:id="@+id/includeheader"/>    
+    
+    <!-- 
+    
+   <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/maplayout"	   
+	    android:layout_margin="10dip"
+        android:padding="10dip"       
+	    android:layout_below="@+id/includeheader"
+	    android:layout_above="@+id/includefooterhelp"
+	    android:background="@layout/transparent_bg"
+	    android:visibility="gone">    
+       
+       
+        <fragment 
+          android:id="@+id/map"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_below="@+id/restaurantname" 
+          android:layout_above="@+id/getdirections"         		              
+          android:name="com.google.android.gms.maps.SupportMapFragment"/> 
+          
+          
+           <TextView 
+	         android:layout_width="wrap_content"
+	    	 android:layout_height="wrap_content"
+	    	 android:id="@+id/getdirections"	    	 
+	    	 android:text="Get Directions"
+	    	 android:textStyle="bold"
+	    	 android:textSize="20sp"
+	    	 android:layout_margin="5dip"
+	    	 android:clickable="true"
+	    	 android:layout_alignParentBottom="true"
+	    	 android:layout_alignParentRight="true"/> 
+	    
+        </RelativeLayout> 
+         -->
+    <ScrollView 
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:background="@layout/transparent_bg"     
+      android:layout_below="@+id/includeheader"      
+	  android:layout_above="@+id/includefooterhelp"  
+      android:scrollbars="none" 
+      android:layout_margin="5dip"
+      android:padding="3dip"       
+      android:id="@+id/scrollid"
+      >
+        
+    
+     <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/readmorelayout"
+	    android:layout_margin="10dip"
+	    android:paddingBottom="20dip"
+	     android:layout_marginBottom="10dip"
+	    >
+	    
+        <TextView 
+             android:layout_width="fill_parent"
+	    	 android:layout_height="wrap_content"
+	    	 android:id="@+id/readmore"
+	    	 android:textSize="18sp"
+	    	 android:textStyle="bold"/>       
+	    
+        </RelativeLayout>
+        
+    </ScrollView>
+    <include 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/flayout"
+		        layout="@layout/footerhelp"
+		        
+		        android:id="@+id/includefooterhelp"/>
+    
+    </LinearLayout>

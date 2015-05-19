@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerCategory"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  
+    >
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFooterClick"
+         android:textColor="@color/white"
+    	
+        android:text="@string/load_more" />
+
+</LinearLayout>

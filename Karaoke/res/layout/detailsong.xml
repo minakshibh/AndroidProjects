@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   
+    android:background="@drawable/app_bg"
+     >
+     <RelativeLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+          android:background="@drawable/header_bg"
+         android:padding="5dp"
+         
+         >
+     <ImageButton 
+         android:id="@+id/back"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_gravity="left"
+         android:layout_centerVertical="true"
+         android:padding="5dp"
+         android:background="@drawable/back_btn_selector"
+         />
+      </RelativeLayout>
+     <LinearLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:padding="10dp"
+         android:orientation="vertical"
+         >
+     
+     <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:id="@+id/zoomLogo"
+         android:layout_gravity="center_horizontal"
+         android:background="@drawable/zoom_big"
+         />
+    <TextView 
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        />
+   
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:orientation="vertical"
+		 
+		 
+		    android:background="@drawable/list_bg"
+	        
+	        >
+			<ScrollView 
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:scrollbars="none"
+			    
+			    >
+				<LinearLayout 
+				    android:layout_height="wrap_content"
+				    android:layout_width="fill_parent"
+				    android:orientation="vertical"
+				   
+				    >
+				    <TextView 
+				    android:id="@+id/songName"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content"
+				    android:layout_gravity="center_horizontal"
+				    android:visibility="gone"
+				     android:textSize="22sp"
+				   android:textStyle="bold"
+				   android:layout_marginLeft="10dp"
+				   android:textColor="@color/white"
+				    />
+			   <ImageView 
+			        android:id="@+id/image"
+			        android:layout_height="200dp"
+			        android:layout_width="wrap_content"
+			        android:layout_margin="5dp"
+			        android:adjustViewBounds="true"
+			        android:src="@drawable/stub"
+			        android:layout_gravity="center_horizontal"
+			        />
+			    <TextView 
+			        android:id="@+id/albumName"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:text="AlbumName"
+			        android:textSize="22sp"
+			         android:layout_marginLeft="10dp"
+			        android:textColor="#fcff00"
+			         
+			        />
+			    <TextView 
+			        android:id="@+id/artistName"
+			        android:layout_height="wrap_content"
+			        android:layout_width="fill_parent"
+			          android:layout_marginTop="5dp"
+			          android:text="ArtistName"
+			          android:textSize="16sp"
+			           android:layout_marginLeft="10dp"
+			          android:textColor="@color/white"
+			        />
+			    <TextView 
+			        android:id="@+id/id"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			        android:visibility="gone"
+			        
+			        
+			        />
+			    <TextView 
+			        android:id="@+id/price"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+			          android:layout_marginTop="5dp"
+			          android:text="price"
+			          android:textSize="16sp"
+			           android:layout_marginLeft="10dp"
+			          android:textColor="@color/white"
+			        />
+			    <LinearLayout 
+			        android:layout_height="wrap_content"
+			        android:layout_width="fill_parent"
+			        android:id="@+id/llayout"
+			        android:orientation="vertical"
+			        android:visibility="gone"
+			        android:layout_marginTop="10dp"
+			        >
+			        <TextView 
+			            android:layout_height="1dp"
+			            android:layout_width="fill_parent"
+			            android:background="#fcff00"
+			            />
+			        <TextView 
+			            android:layout_height="wrap_content"
+			            android:layout_width="wrap_content"
+			            android:text="Songs"
+			           
+			            android:gravity="center"
+			            android:layout_marginTop="5dp"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginBottom="5dp"
+			           
+			           android:layout_gravity="left"
+			            android:textSize="22sp"
+			       		 android:textColor="#fcff00"
+			         
+			            />
+			        <TextView 
+			            android:layout_height="1dp"
+			            android:layout_width="fill_parent"
+			            android:background="#fcff00"
+			            />
+			        </LinearLayout>
+			    <ImageButton 
+			        android:id="@+id/buyNow"
+			        android:layout_height="wrap_content"
+			        android:layout_width="fill_parent"
+			        android:background="@drawable/buy_large"
+			        android:layout_margin="10dp"
+			         
+			        />
+			    
+			    </LinearLayout>
+			    </ScrollView>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

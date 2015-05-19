@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="app_base">#229FD3</color>
+   <color name="white">#ffffff</color>
+   <color name="red">#ff0000</color>
+   <color name="translucent_app_base">#00D4FF</color>
+	<color name ="lighter_app_base">#E8F2Fe</color>
+   <color name="bg_color">#F1F1F1</color>
+   <color name="list_selection_color">#7BCFEF</color>
+</resources>

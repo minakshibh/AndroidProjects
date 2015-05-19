@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/app_base"
+        android:padding="5dp"
+        >
+        <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Pay By Card"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:id="@+id/title"
+      
+       
+        />
+       
+        <Button 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"   
+            android:text="Back"
+            android:background="@drawable/button_back"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            /> 
+    </RelativeLayout>
+    <!-- 
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" > -->
+      <!--   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        > -->
+    <!-- Amount -->
+      <ListView 
+        android:id="@+id/listview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/optionLayout"
+        ></ListView> 
+    
+
+    <!-- Name -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:padding="5dp"
+         android:id="@+id/optionLayout"
+         android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/amountText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="@string/hint_amount"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/currencyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="changeCurrency"
+            android:text="@string/btn_currency"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:onClick="continuePayment"
+            android:text="@string/btn_pay"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+         <Button
+            android:id="@+id/continueEFTButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="continuePayment"
+            android:text="Accept payment with EFT"
+             android:background="@drawable/button_shape"
+            android:textColor="@color/white"
+             android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </Button>
+         <Button
+            android:id="@+id/continueLocalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="continuePayment"
+            android:text="Accept payment with Local Payment Gateway"
+             android:background="@drawable/button_shape"
+              android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+<!-- </ScrollView> -->
+</RelativeLayout>

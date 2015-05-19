@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mads="http://schemas.android.com/apk/lib/com.MadsAdView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:background="@drawable/header"
+        android:padding="5dp"
+        >
+		   <ImageButton android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:id="@+id/btnBack"
+		       android:textColor="#ffffff"
+		       android:background="@drawable/back_button_selector"
+		       />
+		   <TextView
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:id="@+id/txtHeader"
+		       android:textColor="#ffffff"
+		       android:layout_centerInParent="true"
+		        android:layout_toRightOf="@+id/btnBack"
+		       android:layout_marginLeft="10dp"
+		       android:singleLine="true"
+		       android:textSize="25sp"
+		       
+		       android:textStyle="bold"
+		       />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/optionLayout"
+        android:layout_below="@id/header"
+        >
+        <Button 
+            android:id="@+id/btnrestaurant"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_base"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/tab_button_hover"
+            android:text="Restauranter"/>
+         <Button 
+             android:id="@+id/btnnightclub"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_base"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/tab_button"
+            android:text="Nattklubber &amp; Barer"/>
+    </LinearLayout>
+   
+    
+    <ListView 
+        android:layout_below="@id/optionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+      	android:scrollbars="none"
+  	 	 android:scrollingCache="false"
+        android:id="@+id/placeListing"
+        android:cacheColorHint="#e5ffffff"
+         android:layout_marginBottom="0dp"
+       android:listSelector="@drawable/list_item_selector"
+     
+        >
+        
+    </ListView>
+<!--     	<FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:layout_gravity="bottom"
+       android:layout_alignParentBottom="true"
+        >
+   	<com.MadsAdView.MadsInlineAdView
+                android:id="@+id/mads_inline_adview"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	mads:showAdOnAttach="true"
+            	mads:placementId="0345893057"
+            	mads:customParameters="current_category=Araç Kiralama"/>
+   	
+   	</FrameLayout>  -->
+    
+</RelativeLayout>

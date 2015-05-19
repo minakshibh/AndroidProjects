@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/txtName"
+        android:text = "Product name"
+        android:textColor="@color/app_base"
+   	    android:textSize="18sp"/>
+
+    
+     <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:id="@+id/txtPrice"
+        android:text = "N 60"
+        android:textStyle="bold"
+        android:textColor="@color/app_base"
+        android:gravity="right"
+   	    android:textSize="18sp"/>
+     
+</LinearLayout>

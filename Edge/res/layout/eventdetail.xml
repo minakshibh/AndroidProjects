@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:mads="http://schemas.android.com/apk/lib/com.MadsAdView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/rlayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:background="@drawable/header"
+        >
+        <TextView 
+            android:id="@+id/eventname"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Event Name"
+            android:layout_toRightOf="@+id/back"
+            android:textColor="@android:color/white"
+             android:textStyle="bold"
+		       android:singleLine="true"
+		       android:textSize="25sp"
+            />
+        <ImageButton 
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/back_button_selector"
+           android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        
+        >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:layout_marginTop="10dip"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="20dip"
+    android:background="@layout/transparent_bg"
+    android:visibility="visible">
+    
+    
+    <ImageView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="150dip"
+    	 android:id="@+id/restaurantimage"    	 
+    	 android:adjustViewBounds="true"    	
+    	 android:layout_marginBottom="10dip"         
+         android:background="@drawable/noeventicon"/>
+    
+    <TextView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/restinfo"
+    	 android:layout_below="@+id/restaurantimage"
+    	 android:minLines="1"
+    	 android:maxLines="3"    	 
+    	 android:layout_marginBottom="10dip"
+    	 android:clickable="true"
+    	 android:textStyle="bold"
+    	 android:text="This is testing String......."/>
+    
+    <Button 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/readmore"
+    	 android:layout_below="@+id/restinfo"
+    	 android:text="Read more"
+    	 android:textColor="@color/white"
+    	 android:background="@drawable/readinfo" 
+		 android:layout_marginBottom="10dip" 	 
+    	 android:clickable="true" />
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dip"
+        android:orientation="vertical"
+        android:background="@layout/transparent_bg"
+        >
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+           
+            >
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Venue        : "
+                android:textColor="@color/app_base"
+                android:textStyle="bold"
+		        android:textSize="18sp"
+                />
+            <TextView 
+                android:id="@+id/venuetext"
+               
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+               />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Start Time : "
+                 android:textColor="@color/app_base"
+                 android:textStyle="bold"
+		       
+		        android:textSize="18sp"
+                />
+            <TextView 
+                android:id="@+id/starttime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+               />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                 android:text="End Time   : "
+                 android:textColor="@color/app_base"
+                 android:textStyle="bold"
+		       
+		        android:textSize="18sp"
+                />
+            <TextView 
+                android:id="@+id/endtime"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+               />
+        </LinearLayout>
+        
+    </LinearLayout>
+    <LinearLayout 
+         android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dip"
+        android:orientation="vertical"
+        android:background="@layout/transparent_bg"
+        >
+        <Button 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/addToCalender"
+    	 
+    	 android:text="Add to calender"
+    	 android:textColor="@color/white"
+    	 android:background="@drawable/readinfo" 
+			 
+    	 android:clickable="true" />
+        
+        <Button 
+         android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:id="@+id/getdirection"
+    	 android:layout_marginTop="5dp"
+    	 
+    	 android:text="Get Directions"
+    	 android:textColor="@color/white"
+    	 android:background="@drawable/readinfo" 
+		 	 
+    	 android:clickable="true" />
+        
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    </ScrollView>
+<!--      <FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:layout_gravity="bottom"
+       android:layout_alignParentBottom="true"
+        >
+   	<com.MadsAdView.MadsInlineAdView
+                android:id="@+id/mads_inline_adview"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	
+            	mads:showAdOnAttach="true"
+            	mads:customParameters="current_category=Araç Kiralama"
+            	
+            	 mads:placementId="9345913059"
+            	/>
+   	 mads:placementId="0345893057"
+   	</FrameLayout> -->
+    
+
+</LinearLayout>

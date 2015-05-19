@@ -1,0 +1,27 @@
+<data>
+<result>0</result>    // 0 for success and 1 for failure
+<message>success message</message>   // error message in case of failure
+<videoList>
+
+<video>
+	<videoId>1</videoId>
+	<videoUrl>http://api.androidhive.info/progressdialog/hive.jpg</videoUrl>
+	<videoName>Song1</videoName>
+	<videoPrice>50</videoPrice>
+	<thumbnailUrl>thumbnail url</thumbnailUrl>
+	<artistName>Gurdass Maan</artistName>
+	<albumName>Chirri</albumName>
+</video>
+
+<video>
+	<videoId>2</videoId>
+	<videoUrl>http://api.androidhive.info/progressdialog/hive.jpg</videoUrl>
+	<videoName>Song2</videoName>
+	<videoPrice>60</videoPrice>
+	<thumbnailUrl>thumbnail url</thumbnailUrl>
+	<artistName>Gurdass Maan</artistName>
+	<albumName>Chirri</albumName>
+</video>
+
+</videoList>
+</data>

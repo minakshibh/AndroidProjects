@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="App Settings">
+       <Preference
+		    android:title="TRX Server Config"
+		     android:key="trx"
+		    android:summary="Configure TRX settings">
+		<!-- <PreferenceScreen
+		     android:title="TRX Server Settings">
+		    
+		  <EditTextPreference
+		     android:key="username"
+		     android:summary="Enter username"
+		     android:title="UserName" />
+		  <EditTextPreference
+		     android:key="domain"
+		     android:summary="Enter domain name"
+		     android:title="Domain" />
+		  <EditTextPreference
+		     android:key="password"
+		     android:summary="Enter Password"
+		     android:title="Password" />
+		  <EditTextPreference
+		     android:key="localPath"
+		     android:summary="Enter local server path"
+		     android:title="Local Server Path" />
+		  
+		  <EditTextPreference
+		     android:key="remotePath"
+		     android:summary="Enter remote server path"
+		     android:title="Remote Server Path" />
+		  
+		</PreferenceScreen> -->
+           
+  		</Preference>
+  		 <Preference
+		    android:title="Master Server Config"
+		    android:key="master"
+		    android:summary="Configure Master server settings">
+	<!-- 	<PreferenceScreen
+		     android:title="Master Server Config Settings">
+		    
+		  <EditTextPreference
+		     android:key="username"
+		     android:summary="Enter username"
+		     android:title="UserName" />
+		  <EditTextPreference
+		     android:key="domain"
+		     android:summary="Enter domain name"
+		     android:title="Domain" />
+		  <EditTextPreference
+		     android:key="password"
+		     android:summary="Enter Password"
+		     android:title="Password" />
+		  <EditTextPreference
+		     android:key="localPath"
+		     android:summary="Enter local server path"
+		     android:title="Local Server Path" />
+		  
+		  <EditTextPreference
+		     android:key="remotePath"
+		     android:summary="Enter remote server path"
+		     android:title="Remote Server Path" />
+		  
+		</PreferenceScreen> -->
+  		</Preference>
+  	</PreferenceCategory>
+</PreferenceScreen>

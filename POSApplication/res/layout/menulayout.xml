@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/translucent_app_base"
+   	android:visibility="gone"
+    android:id="@+id/llayout" >
+    
+       <Button 
+            android:id="@+id/Trasaction"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Transaction"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+       <!--  <Button 
+            android:id="@+id/findItem"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Find an Item"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            />
+         <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/> -->
+         <Button 
+            android:id="@+id/voidReceipt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:text="Void Reciept"
+         
+            />
+         <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/getReceipt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Get Receipt "
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/ReturnItem"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:text="Item Return "
+           
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+         <Button 
+            android:id="@+id/itemExchange"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:text="Item Exchange"
+           
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+         <Button 
+            android:id="@+id/itemCancel"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:text="Order Cancel"
+           
+            />
+        
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/signOff"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:text="Sign Off"
+            android:textStyle="bold"
+            
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+       <!--  <Button 
+            android:id="@+id/paycash"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Pay Cash"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/> -->
+        <Button 
+            android:id="@+id/floatcashbtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Float Cash"
+           
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:textStyle="bold"
+             android:visibility="gone"
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/operatorDeclaration"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:text="Operator Declaration"
+            
+            />
+        <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/paypal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Sample Paypal"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            />
+         <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/btnbreak"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Break "
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            
+            />
+          <TextView 
+            android:layout_height="0.5sp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"/>
+        <Button 
+            android:id="@+id/settings"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:paddingRight="10dp"
+            android:text="Settings"
+            android:textStyle="bold"
+            
+            />
+        
+</LinearLayout>
+</ScrollView>
